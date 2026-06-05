@@ -61,7 +61,7 @@ export default async function CompanyProfilePage({ params }: CompanyProfilePageP
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(135deg,rgba(255,107,0,0.14)_0%,transparent_30%),linear-gradient(180deg,#090B10_0%,#11141D_52%,#090B10_100%)]" />
       <div className="pointer-events-none fixed inset-0 opacity-[0.14] [background-image:linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.08)_1px,transparent_1px)] [background-size:62px_62px]" />
 
-      <main className="relative mx-auto max-w-7xl px-4 pb-28 pt-4 md:px-8 md:pb-32 md:pt-8">
+      <main className="relative mx-auto max-w-[1440px] px-4 pb-28 pt-28 md:px-8 md:pb-20 md:pt-32">
         <header className="flex items-center justify-between gap-4">
           <Link
             href="/buscar"
@@ -76,7 +76,7 @@ export default async function CompanyProfilePage({ params }: CompanyProfilePageP
           </div>
         </header>
 
-        <section className="grid gap-6 pt-5 md:grid-cols-[minmax(0,1fr)_420px] lg:grid-cols-[minmax(0,1fr)_480px]">
+        <section className="grid gap-6 pt-5 md:grid-cols-[minmax(0,1fr)_420px] lg:grid-cols-[minmax(0,1fr)_480px] xl:grid-cols-[minmax(0,1fr)_520px]">
           <div>
             <div className="relative overflow-hidden rounded-[38px] bg-[#11141D] shadow-[0_34px_100px_rgba(0,0,0,0.44),0_0_40px_rgba(255,107,0,0.08)] ring-1 ring-white/10">
               <div className="relative h-[460px] md:h-[640px]">
@@ -231,7 +231,7 @@ export default async function CompanyProfilePage({ params }: CompanyProfilePageP
             </section>
           </div>
 
-          <aside className="space-y-4 md:sticky md:top-8 md:self-start">
+          <aside className="space-y-4 md:sticky md:top-28 md:self-start">
             <section className="rounded-[34px] border border-white/10 bg-[#11141D] p-5 text-white shadow-[0_28px_90px_rgba(0,0,0,0.34)]">
               <div className="flex items-start justify-between gap-4">
                 <div>

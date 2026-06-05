@@ -133,32 +133,14 @@ export default function HomePage() {
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(135deg,rgba(255,107,0,0.16)_0%,transparent_28%),linear-gradient(180deg,#090B10_0%,#11141D_58%,#090B10_100%)]" />
       <div className="pointer-events-none fixed inset-0 opacity-[0.18] [background-image:linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.08)_1px,transparent_1px)] [background-size:64px_64px]" />
 
-      <main className="relative mx-auto max-w-7xl px-4 pb-28 pt-4 md:px-8 md:pb-32 md:pt-8">
-        <header className="flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-3">
-            <span className="flex size-11 items-center justify-center rounded-[18px] bg-[#FF6B00] text-xl font-black shadow-[0_18px_44px_rgba(255,107,0,0.32)]">
-              H
-            </span>
-            <span className="text-sm font-black uppercase tracking-[0.18em] text-white">
-              Hub Local
-            </span>
-          </Link>
-          <Link
-            href="/buscar?filter=nearby"
-            className="flex min-w-0 items-center gap-2 rounded-full bg-white/8 px-4 py-2 text-sm font-bold text-white ring-1 ring-white/12 backdrop-blur-xl"
-          >
-            <MapPin className="size-4 shrink-0 text-[#FF6B00]" />
-            <span className="truncate">Embu das Artes</span>
-          </Link>
-        </header>
-
-        <section className="grid gap-8 pt-10 md:grid-cols-[minmax(0,1.05fr)_420px] md:items-end md:pt-16 lg:grid-cols-[minmax(0,1fr)_500px]">
+      <main className="relative mx-auto max-w-[1440px] px-4 pb-28 pt-28 md:px-8 md:pb-20 md:pt-32">
+        <section className="grid gap-8 md:grid-cols-[minmax(0,1fr)_440px] md:items-end xl:grid-cols-[minmax(0,1fr)_540px]">
           <div className="max-w-4xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/8 px-3 py-2 text-xs font-black uppercase tracking-[0.14em] text-white/74 ring-1 ring-white/12">
               <Sparkles className="size-3.5 text-[#FF6B00]" />
               Descoberta premium local
             </div>
-            <h1 className="max-w-4xl text-[46px] font-black leading-[0.94] tracking-normal text-white md:text-7xl lg:text-8xl">
+            <h1 className="max-w-5xl text-[46px] font-black leading-[0.94] tracking-normal text-white md:text-7xl xl:text-8xl">
               Encontre o melhor da sua cidade.
             </h1>
             <p className="mt-5 max-w-2xl text-base font-medium leading-7 text-white/68 md:text-xl">
@@ -200,7 +182,7 @@ export default function HomePage() {
           </div>
 
           <aside className="rounded-[34px] bg-white/8 p-4 ring-1 ring-white/12 backdrop-blur-xl md:p-5">
-            <div className="relative h-80 overflow-hidden rounded-[28px] bg-[#11141D] ring-1 ring-white/10">
+            <div className="relative h-80 overflow-hidden rounded-[28px] bg-[#11141D] ring-1 ring-white/10 xl:h-[420px]">
               <div className="absolute inset-0 opacity-70 [background-image:linear-gradient(90deg,rgba(255,255,255,.07)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.07)_1px,transparent_1px)] [background-size:38px_38px]" />
               <div className="absolute left-6 right-6 top-1/2 h-px bg-[#FF6B00]/40" />
               <div className="absolute bottom-8 left-1/2 top-8 w-px bg-white/12" />

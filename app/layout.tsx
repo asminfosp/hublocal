@@ -1,27 +1,30 @@
-import { Analytics } from '@vercel/analytics/next'
-import type { Metadata } from 'next'
-import './globals.css'
+import { Analytics } from "@vercel/analytics/next"
+import type { Metadata } from "next"
+
+import { GlobalNav } from "@/components/global-nav"
+import "./globals.css"
 
 export const metadata: Metadata = {
-  title: 'HUB LOCAL - Descubra negócios locais',
-  description: 'Plataforma premium de descoberta local. Encontre os melhores negócios, produtos e serviços perto de você.',
-  generator: 'v0.app',
+  title: "HUB LOCAL - Descubra negocios locais",
+  description:
+    "Plataforma premium de descoberta local. Encontre os melhores negocios, produtos e servicos perto de voce.",
+  generator: "v0.app",
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: "/icon-light-32x32.png",
+        media: "(prefers-color-scheme: light)",
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        url: "/icon-dark-32x32.png",
+        media: "(prefers-color-scheme: dark)",
       },
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: "/icon.svg",
+        type: "image/svg+xml",
       },
     ],
-    apple: '/apple-icon.png',
+    apple: "/apple-icon.png",
   },
 }
 
@@ -33,8 +36,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="bg-background">
       <body className="font-sans antialiased">
+        <GlobalNav />
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   )

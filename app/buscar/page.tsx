@@ -53,12 +53,12 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
   const title = q || activeCategory?.label || "Economia local"
 
   return (
-    <div className="min-h-screen overflow-hidden bg-[#090B10] text-white">
+    <div className="min-h-screen overflow-hidden bg-[#090B10] pt-[72px] text-white">
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(135deg,rgba(255,107,0,0.14)_0%,transparent_30%),linear-gradient(180deg,#090B10_0%,#11141D_55%,#090B10_100%)]" />
       <div className="pointer-events-none fixed inset-0 opacity-[0.16] [background-image:linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.08)_1px,transparent_1px)] [background-size:60px_60px]" />
 
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#090B10]/88 backdrop-blur-2xl">
-        <div className="mx-auto max-w-7xl px-4 py-3 md:px-8">
+      <header className="sticky top-[72px] z-50 border-b border-white/10 bg-[#090B10]/88 backdrop-blur-2xl">
+        <div className="mx-auto max-w-[1440px] px-4 py-3 md:px-8">
           <div className="flex items-center gap-2">
             <Link
               href="/"
@@ -92,8 +92,8 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
         </div>
       </header>
 
-      <main className="relative mx-auto grid max-w-7xl gap-6 px-4 pb-28 pt-5 md:grid-cols-[340px_minmax(0,1fr)] md:px-8 md:pb-32">
-        <aside className="space-y-4 md:sticky md:top-24 md:self-start">
+      <main className="relative mx-auto grid max-w-[1440px] gap-6 px-4 pb-28 pt-5 md:grid-cols-[360px_minmax(0,1fr)] md:px-8 md:pb-20 xl:grid-cols-[380px_minmax(0,1fr)]">
+        <aside className="space-y-4 md:sticky md:top-40 md:self-start">
           <section className="rounded-[34px] border border-white/10 bg-white/8 p-5 backdrop-blur-xl">
             <div className="flex items-start justify-between gap-4">
               <div>
@@ -241,7 +241,7 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
               </div>
             </div>
           ) : (
-            <div className="grid gap-4 xl:grid-cols-2">
+            <div className="grid gap-4 xl:grid-cols-3">
               {results.map((business) => (
                 <BusinessCard key={business.slug} business={business} />
               ))}

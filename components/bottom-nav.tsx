@@ -16,7 +16,7 @@ interface BottomNavProps {
 
 export function BottomNav({ activeIndex = 0 }: BottomNavProps) {
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-white/15 bg-neutral-950/92 px-3 pb-3 pt-2 text-white shadow-[0_-18px_50px_rgba(0,0,0,0.22)] backdrop-blur-2xl">
+    <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-white/15 bg-neutral-950/92 px-3 pb-3 pt-2 text-white shadow-[0_-18px_50px_rgba(0,0,0,0.22)] backdrop-blur-2xl md:hidden">
       <div className="mx-auto grid h-16 max-w-md grid-cols-4 gap-1 rounded-[24px] bg-white/7 p-1 ring-1 ring-white/10 md:max-w-3xl">
         {navItems.map((item, index) => {
           const isActive = activeIndex === index

@@ -1,0 +1,3125 @@
+[
+  {
+    "id": "9fd397d8-d9e8-5211-a4e4-819d43143cad",
+    "business_id": "be303474-19e9-5c9e-a9d8-14ada0cdc008",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "efa0fcf2-2bae-5a20-a4f7-7e0aec02a4e8",
+    "business_id": "1bffc549-8213-5cae-a3e7-5b7ef588e194",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1e5357b1-60a1-59f3-a4d7-4ae428ca951d",
+    "business_id": "7241102f-e2fd-597f-ac7a-9aadc139bf01",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "dc559f62-672c-5a33-a382-4d039525b289",
+    "business_id": "b9ac1ebd-dd9b-53b7-a756-9d0c110a7c64",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5f70f35f-a3b9-5041-a448-a4aaf3907995",
+    "business_id": "827a7f88-9fe2-5211-ad5b-76a69cf6ab88",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1193ec00-d376-59f8-a9c8-f21cba8356b7",
+    "business_id": "c7038ff5-726d-593e-a419-e9aac54a2d04",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "031b29e9-d526-5b1b-a9df-e3f6d0a863f8",
+    "business_id": "2a1cd4e9-2b29-596c-ad9b-f5e9964a998e",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a341d0e5-daba-5e9d-aee6-b3165c396fef",
+    "business_id": "f4bc535f-fe47-5c34-a2da-925d46ae652d",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5faa47b9-1bc8-56e3-adfa-c31ffa48b03f",
+    "business_id": "dd73665b-5f78-5361-a4fa-5a7f14678b53",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d9f0c6bd-eded-55c3-aea1-845ad86f47b2",
+    "business_id": "382a6d84-86f3-587d-a599-16d31ef7183f",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a8321856-13f8-524e-a09c-4e7fc9d10a63",
+    "business_id": "f138f1ac-d964-528b-a150-8339612877b3",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6a510d70-3192-5aa0-a23b-3122e284f2be",
+    "business_id": "9b33a577-5b79-58a1-a17a-f09a82035404",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1f202e3d-39ee-5af8-ab9c-a70d1db5459f",
+    "business_id": "5092ad38-202c-5ff5-ac67-9e0d2d682860",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a23c2779-b772-59d5-a7df-937e8352ae7c",
+    "business_id": "9066e760-1e68-5c6c-a744-8007f015ac59",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "80791901-cd2c-5373-a1c4-94c6313aa9f0",
+    "business_id": "201a2877-88b1-5f39-a25e-c1ead32cf3b1",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c3ad6f0a-7664-5710-a4e0-fe0f47c9c286",
+    "business_id": "3aa85639-c496-5bf6-aaab-b69dc9cac237",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3c2ca9bf-7caa-59fb-a6f3-14ce45bcd479",
+    "business_id": "64827d67-d23f-5bee-a113-836ddeff0172",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3a7bab05-c86c-5222-aafa-f17bd9444b49",
+    "business_id": "74c7b25c-be76-5bd0-a363-665a044bfd60",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a0948e0e-d372-590f-a41f-b92b728086d4",
+    "business_id": "b72b4c7a-debb-59a3-aded-4ec27fbd2894",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5ecb81cf-1eff-5552-a31d-08cfbf5d69ed",
+    "business_id": "57f21e2b-abb6-5264-a9c1-9ce8371faca1",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e299ba57-2a2d-5aec-a19a-b052b437a11a",
+    "business_id": "25441b94-7fc3-5d8a-aa26-30688f877ee2",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "2f75c24a-5312-5cfe-a55a-c89882dcf186",
+    "business_id": "a0e19b6b-7bda-5d1e-a521-c05fb117630a",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "604f8e9e-4a25-5024-af29-5bafcb0b54cb",
+    "business_id": "fe6d7b53-f246-58e4-a4ce-f2a790ddaf8b",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "90de00bd-d537-502d-aa40-22c8b04e52e2",
+    "business_id": "848e7cde-c8a9-5e7c-a0df-d68de0c89e4b",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6592b255-9dcd-5a2e-a2dd-65c09a479298",
+    "business_id": "378a7b8c-78fe-58a0-aef0-490241806975",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5578f997-8512-5aa1-a307-d909e15f14de",
+    "business_id": "2f3a62ab-4843-58be-a01b-0c143919802a",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bea59f6e-b9be-5ea4-a0bd-f7135212aec7",
+    "business_id": "bd0423af-c9c5-53b9-a0de-575195d66f77",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a1c95384-697d-5ebe-a5f7-953cd37b9997",
+    "business_id": "70f40e2f-fc28-5a1e-a48e-e9a11964fd8e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "fe8580a2-5d60-5b2f-a235-3be1bb12c82e",
+    "business_id": "eabbda98-3a23-5b48-afef-432466eb4241",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "2a1e6b60-132d-5b36-a1e1-efc2b5cda713",
+    "business_id": "96cc51f5-74bd-5841-acbf-370834835bd6",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "30d5869e-469b-57dc-afa0-4c0e90e4b090",
+    "business_id": "356ed7f8-848d-509e-afe3-369b35f59008",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "953736cd-b72a-50ee-acc7-46b0665eaa29",
+    "business_id": "1af9f46b-c545-5e94-a7d8-748eebeb7584",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ea836f5c-0041-5f4a-abbe-c891596e94de",
+    "business_id": "86cb3513-2132-504b-a66f-a163c8c09e9a",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a307ca7e-44fd-5d7d-a44f-221583c0191b",
+    "business_id": "1bf98d25-014f-5083-a523-d6310ebe4134",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "0bdca4df-92a1-5dd6-ac79-ff9f701052c8",
+    "business_id": "5275ad6e-9f61-580e-a696-159bfeb4687c",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5923a074-17e2-517c-a4bc-7dfcb5b19bf1",
+    "business_id": "fbe3d195-1d59-5752-a853-1795052dbbbd",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "76d1ea77-2e98-50bc-a9be-ab9e44fe3851",
+    "business_id": "0b21abf7-7727-577c-aee5-8e0ba091d420",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "4b7d82ce-3199-5e0d-a7ec-23b9da44c9a8",
+    "business_id": "49c01704-00ca-55bb-a71c-20c6b2637c5c",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ff4e8a97-40d5-5bd7-a734-1e03a539d27a",
+    "business_id": "c3397215-da73-5ed5-a49b-88924cd59ddc",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "05e4130a-3851-5c31-a1b1-570f508f4b3a",
+    "business_id": "d531895c-44bc-5134-ad4c-f108ceed13ba",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b5b6f0f8-af3f-5d2f-a52b-7675a06c5304",
+    "business_id": "72b762bc-0326-5a89-a6c0-b7954b7fc96f",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "348ade29-bc35-5182-ae44-49ea202120c3",
+    "business_id": "1b328a2d-0715-525d-a9dc-ce885e8e47dd",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "feceab46-cece-523d-a180-d3906eef99ff",
+    "business_id": "5bdc335c-388c-5878-ab41-27198ddc6d1a",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a8028b8a-42b1-51f1-a14a-bf9b5b3a8079",
+    "business_id": "5bb6a32d-2f9e-5414-a7b7-1056e1c8df2b",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "47e88122-281d-502e-a8e7-2585f72d088b",
+    "business_id": "ab54e59d-32e6-5fa0-ab4f-50434237bef0",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ed5778bb-cdda-544c-ac34-103cf74661e3",
+    "business_id": "fc64d3ce-5dde-53eb-a4bd-b441eff3ca0c",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "4a548a60-28b3-5626-afc6-5cddeb99c871",
+    "business_id": "8746fd65-902b-5644-a1f1-f88cf3d805c3",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "117e3d90-12c6-553b-af23-2c9097541311",
+    "business_id": "dec5dd44-4e9e-5b08-ac11-28355482a4a2",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7d24db13-2080-5aad-a83c-f56162afa7ff",
+    "business_id": "a3bd23c5-a31c-5b71-a160-d8e257f5dd1c",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "93f0983a-aded-51af-a96d-c2b8fd6a85db",
+    "business_id": "60c908a3-9e47-5ef1-a9de-0a1f5d213e2e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "720656fb-744b-5e5d-a8c8-40189190de73",
+    "business_id": "97d2726f-d099-5306-a190-87a814e57f1e",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9e92c7ed-e048-5d28-a44f-d240cf8e7dcc",
+    "business_id": "692f66e3-d0c0-5bc1-ace3-073d867fd4f6",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e7d5ad4e-26dc-5fa2-aefe-63ad03431b5d",
+    "business_id": "d4e38028-c65e-5051-a3b2-21efd43d1082",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b5495fa3-5543-5191-a21d-4f2ba6603c49",
+    "business_id": "519de061-01ec-53a7-a8e5-03785807c5da",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5837e86b-d636-5ba4-a3c4-16304dbcb106",
+    "business_id": "86ada7e4-9a97-54b8-afff-421c9f880cf2",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d022c198-5c3d-5b1e-a063-427a7fd1a5cf",
+    "business_id": "83d45d04-76d1-547f-a8e8-6f68448cb8a1",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c83b3a5d-cc95-5f46-acf7-ab99bae1c7f7",
+    "business_id": "0e7b0c5b-a71b-59c2-a6b9-aca4b9719a83",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "dce7a8da-5168-5495-a573-64a3be7b6e94",
+    "business_id": "62940b3a-3640-57a4-a4e2-b10402a85263",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7372dd95-e8e9-5bc2-a4a1-6aacbbf74adc",
+    "business_id": "4bc1f8ca-31ff-581a-a89e-77663bcc1a46",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b4be4979-fdd2-5585-af43-8d9a4748ac98",
+    "business_id": "0d685b69-c3f2-512f-a2ec-ed849e1d726a",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6678700b-777b-52af-ae60-cd74b8ddf6a5",
+    "business_id": "7bf983c3-0a1b-5977-a51f-a07e043a3a5b",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "abfc2fe7-e8c9-5275-a389-d625487f004c",
+    "business_id": "9952ea43-8c78-572b-af74-5be7f100c371",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a108dc3d-7ef6-5665-a66c-2e928363ed1f",
+    "business_id": "fbf338a0-81a1-5622-a6de-1046b7e985ab",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "693a70f7-5d6a-51f8-ae9d-ff601d49b00f",
+    "business_id": "a93f8f8d-aec0-58e8-ae1b-ec3a1415d887",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "38740496-307b-50db-aac9-18a7d6540a47",
+    "business_id": "70968376-4821-5eae-ad61-40d453aad9bf",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7a047f31-672e-59e0-a72a-06641fbf88c6",
+    "business_id": "77e12421-1d1c-5216-a324-bf18705fc35d",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c7653587-226c-5889-a7b3-fc2922082382",
+    "business_id": "30d130f2-9371-5c88-a3d4-4ef7fbaccc30",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "4b5fa6a0-8524-5d29-a76b-20b358d3c5f2",
+    "business_id": "c41cd116-9ee7-5f65-a932-a5fb6e30e11a",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "29baaa72-0ca9-58a1-a908-a02c5e1a536b",
+    "business_id": "beaf9b75-937d-527d-a6e8-4cb36ac2d82f",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "edbaf859-1a2b-55b3-ac69-a695eb5e2c54",
+    "business_id": "afee8824-b6e9-5674-ae12-2ee092ab4e2f",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "0f70883d-0380-5d90-ae51-78913d96e58e",
+    "business_id": "b30a10a7-a439-5a13-ae1a-b7698455abe2",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "fac5067b-64df-534f-a459-ed73e4dc702a",
+    "business_id": "75f72706-b885-5d6e-a189-ea34503257ad",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c8e1a5bd-87c1-5f50-a36c-3e9d6c70066a",
+    "business_id": "01e3bce9-5e04-560a-a875-d3b9c6ba1d60",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f6cdc6a2-37c6-5d89-a57d-94722154867f",
+    "business_id": "2c2f9195-ff52-582c-aad6-f606fa88e5cd",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "42317b71-17e9-562f-a901-c9cfb6196404",
+    "business_id": "9c48106a-d2d2-59b2-a80e-74a002889a06",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "effef32e-d00d-5db9-a518-1dc325b51fa8",
+    "business_id": "3f198961-59f0-5c25-aeb4-423c4eecda8c",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "067b6f95-3771-53df-aff0-a7f4c196305b",
+    "business_id": "f693922f-3d03-593d-a111-5840d0d413da",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9024e3eb-89fb-5df0-a084-f2bec2f3de82",
+    "business_id": "2768f0c0-b39e-5673-ac96-91f2655834d3",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d71cb023-a89c-5cd4-a0b8-26775b49a0f5",
+    "business_id": "ec59aef4-b211-5805-ada9-03533c137dca",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a4133c01-dc43-5b48-a3e4-a1a58f03ea8f",
+    "business_id": "3ab24d79-1016-52bd-ae5c-1c57cf2ebd02",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "fbe859cf-0ab1-5cf8-ab88-9d770d32c02c",
+    "business_id": "9525cf5e-fed3-5f67-a562-990afc87ecf7",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e6278d88-fe7d-5956-ac5b-7c4038e0a971",
+    "business_id": "054dd73d-81c7-5288-aa8b-7b5a3299527b",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "87c5540b-8114-5b27-a76a-c1bf02a44768",
+    "business_id": "10b3ca92-bd8a-52a9-ae6b-c996c88e5143",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d60d9e49-b26a-5bc8-a7dc-7f2329194a55",
+    "business_id": "555a6cb7-2c25-5f58-a1b0-ae2c84789816",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7a5c5771-633d-57ee-a2bb-e9e3871f6d49",
+    "business_id": "e582d2b0-1ca8-50ba-a952-ed3fc6ffe57d",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a59062c8-c02d-52c4-ad6b-a19fe6b09f77",
+    "business_id": "0a4be280-5407-50fe-a7e2-e1bdf357874d",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "465f5298-9966-5d03-abd7-25184e46dc6f",
+    "business_id": "965dd42d-761c-54c2-acbd-fde664a160fd",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c04561fd-18a7-52ff-a41d-ef2f6dcba35a",
+    "business_id": "462d7a32-f812-5959-a538-68719c941651",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9702020f-ac58-5cb1-ad09-1a6614061594",
+    "business_id": "f2ad2918-622a-5b34-acc5-399062c46f53",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ff93f66b-a67c-5c98-a7bc-42693fbed8fb",
+    "business_id": "d91ec7c4-9b0d-5af8-a780-868b1c5c4c8a",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7f4f3ba1-b506-5fe2-abca-4f52cae79507",
+    "business_id": "233c3e5d-2ed5-5960-a0bc-2cb5783cea65",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "825f67d8-7a92-5dc8-a12a-0be4293b69bf",
+    "business_id": "bced5ffe-d2fb-5082-a5f3-58a3a745a82b",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "95f0632b-9052-5494-a9ea-7445050494e6",
+    "business_id": "ba173159-c3b7-5057-a346-1821bcc44e1d",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "cd78d16d-db13-552c-a5fe-587206abb910",
+    "business_id": "537f7fcd-ee4d-571c-ad0f-bd6732a13b31",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "56352b11-7a5c-5164-aa6e-f3e628fc867c",
+    "business_id": "6ae2e348-9ab0-5d31-a8ec-294252c120ba",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e1957a37-eb3a-5bbb-a9dc-bec82fcd1e48",
+    "business_id": "6a148946-d84c-544f-abc3-30e10294939d",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "fdf9fe54-7729-5832-a5d5-187b7e226ec3",
+    "business_id": "63a57da1-12a3-546e-a178-7416007e211d",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "00a332de-8a38-58e3-acbf-d91d83ab1f4f",
+    "business_id": "764568d4-f365-5d14-a450-f97c6c88cd09",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d6d332ba-6e9c-555b-a5db-e28db5a78639",
+    "business_id": "2128f991-ea2f-5d11-a795-a016a5b74a2f",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "10a4e924-4143-5b8c-acf0-4d7a7f7c5420",
+    "business_id": "c1cb1ff0-7e63-5806-a4fa-ffa69a17159c",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7b24613b-8cfa-5c4d-a5fb-1e422327bc88",
+    "business_id": "d81e7972-3099-50ac-aece-d5f9706130e7",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "2995481d-cada-5052-a1db-8655b45c78f8",
+    "business_id": "b1b9224a-7930-56a8-a5af-103d1ce47d58",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5879afc8-480a-5ad4-a314-684b529bd6ee",
+    "business_id": "4bacab95-abd7-50d5-a5fe-ff317decf1f6",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "05cee747-a4d0-5957-aac2-9c0d9da04a7b",
+    "business_id": "cca18941-9857-58c1-aa56-99d4be4f6c53",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c83e3039-fe71-5209-a9e2-b7ca52d21a99",
+    "business_id": "aaaab86f-a59b-5f1d-ad4a-067fb5679685",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8422c198-c456-5c12-a097-4860f1e5400e",
+    "business_id": "1371290d-bfe5-5b9e-a48d-f4fbb1e52158",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c943da37-2812-5ca5-a86b-d4375a6b6e9b",
+    "business_id": "cbee3e89-7690-5e65-a528-0d3c5f9fddf2",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b0537dec-6aff-508d-a28c-d8b81cc57f98",
+    "business_id": "1144a9c8-3e11-5d1e-ad58-9501ae2e239b",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "11c817f7-8765-54bc-a63f-3c6a22c6fa78",
+    "business_id": "36757280-e9c9-5732-a551-1b2a2fbe2aed",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3ae63ba8-fe78-59e8-a6d4-99fd0fdb4e9e",
+    "business_id": "fe5cdaa4-973b-5304-a0f5-40ea1edf8a07",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8400bf7f-331a-5ac9-ab8e-4e33c51a88a8",
+    "business_id": "371005fc-0554-55e0-aaeb-4a1dc6cd21ec",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "494e462d-f99d-5634-ac73-10bf799cacc6",
+    "business_id": "e27fca06-686a-52e6-a35a-ecb4dc7818e1",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6afbdb56-6f4b-5159-a005-fba7654ec65a",
+    "business_id": "8da5e171-23f6-51a0-acf2-29ea33133fc5",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "980fe4d5-bc00-5957-a8b8-2ea39e541fd2",
+    "business_id": "09a6e490-a43a-5321-a94e-b8b0cc454e37",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a74fa2f3-c775-5f99-acff-5ae4c9bd6f0f",
+    "business_id": "7d10b0f0-22b1-5a67-a9d9-489b0b8583bf",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bbbad49d-ba55-561b-aac9-6de189854cf5",
+    "business_id": "61979d67-bfdc-5733-add6-a2847548afe9",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "2f1e98ed-fbaf-531e-a35e-057f237656f4",
+    "business_id": "bdef7bce-a7bd-5c99-a46d-c38a36171db7",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5924b376-a009-5f67-a1a3-7caa096d92ac",
+    "business_id": "dea9d171-502c-5356-afb9-3cfc41f6e31a",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "33ae4915-c185-5eea-a9a4-345e9f4dfede",
+    "business_id": "a5dde892-712a-50de-aac8-61e694b405e0",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8c7317a3-8707-5368-aeca-611afb64d1ed",
+    "business_id": "61f75cab-fafe-5cda-ac87-56e9f645c8a5",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9a7fe617-807a-5640-a8de-4fdb1a3ad941",
+    "business_id": "a472aae1-ed90-5724-ad08-eb81e7e6a4b1",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "62b3e979-e976-5056-ad40-22dfd62a0be9",
+    "business_id": "990df3fe-5408-5bed-a9d3-3c530862c536",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "793e1871-c9a4-5fec-a1e8-bf5387bbbe29",
+    "business_id": "a4a14df4-a4ed-59a7-a469-67380fb94bbb",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "53614f0d-b142-5974-a52d-80f8226ccd7a",
+    "business_id": "56aee523-87b5-587c-a7e4-49b6b0bd6ecf",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1973950a-44ba-5a9a-a192-86932521d90d",
+    "business_id": "ca4f464b-e0ec-5871-a1f9-7fdd5efa0423",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1dabf35f-79fe-5e5f-adc4-dffc3a09a6f2",
+    "business_id": "9e6bab3c-68ea-56fb-a33f-d066439f9fda",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "cff05480-37f6-532f-acd8-deab6af54ad5",
+    "business_id": "2d4015bb-9b8c-530a-ad31-d0cdf13fe693",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "4512c8b8-803c-5e6d-abb5-3b25e8da1dd4",
+    "business_id": "aa787d1a-28d8-52ac-a5af-d3b90ad714fc",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5dce3a37-934d-5801-a33d-32c81ff285e3",
+    "business_id": "06e5a768-6db1-5d16-aa9b-6f8a4ea11f9c",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3155bc78-a396-51af-afb3-94bac37e39a5",
+    "business_id": "d92af856-951a-521f-a74f-a83d05b3e5b0",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bdfe39c5-1976-5ee0-a92c-863a7e8dd3e6",
+    "business_id": "ecf6afe9-d6c9-56c7-afaf-f6e510a56fe9",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f88fefe9-12b9-5ab5-a35c-405ad2238bcb",
+    "business_id": "f73a682c-ab45-50ca-ae81-898a86daf0f0",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d9b1db91-967d-5426-aef8-6d097989fc48",
+    "business_id": "b939dd7b-2b4f-5ef7-adf7-f2ee8048d686",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "90a0957e-c971-54a0-a671-1813f8862b49",
+    "business_id": "3dc25e70-dff3-53e8-ae7b-ac5fe75706ab",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "535e404b-a14a-5cf5-a0c7-18937e2a9960",
+    "business_id": "95828eb6-a43c-52e7-adc9-6c0c637d832b",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f7effc63-7ff0-50f4-ad76-d117862bb2cd",
+    "business_id": "e541ba3b-2bbb-5485-a10f-6c4ebcfa1ed3",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "606c423c-42e3-53b7-ad73-ab6786b43be2",
+    "business_id": "708eb766-a849-551f-aedb-6019d077afc3",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "609d6e7c-411f-5dc5-a051-78b46ae017ce",
+    "business_id": "e919e6ac-1932-5019-af84-c8273a7d31c6",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "81b5fbc2-beb6-5e98-ae54-261a53acedf7",
+    "business_id": "7f66ffaa-e67d-58ea-a067-d719ef9a775d",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c9d6b662-a699-5d65-a1dc-ee16f0af0897",
+    "business_id": "8aa8f242-36bc-5c2d-af92-9a09c399f267",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5c5829f9-b014-5f01-a2bf-8e306d6d997d",
+    "business_id": "2e703df1-027a-511b-a627-faa99b0d79fb",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "91aa9c51-7954-56a6-a24e-cb597ae74be6",
+    "business_id": "d4717c1c-9f04-535e-aab9-dbb432dc1a50",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8a88c539-abbd-52dd-a3d5-70ff7ccf2d2c",
+    "business_id": "7cdce4bf-837c-517d-adac-0e8d157cdddd",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ec5a7596-5b56-5523-a366-5e763deb514f",
+    "business_id": "5d14faa3-d6fb-5314-a958-dd2082a5baac",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f63531b0-c299-5a29-a834-394766e68cd2",
+    "business_id": "fc2de569-eec4-5dba-a672-434874e48005",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e1c9999b-c464-5594-a473-5d5cdbbbd422",
+    "business_id": "a85c0e51-0f8e-5f2e-a2b3-1558ba56df68",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "29f9939e-2f76-5254-aac8-4d6259124fbb",
+    "business_id": "b60b505f-31c6-5ba5-a9dc-890a069db7f0",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3f8b8f90-9d5b-51d1-abad-068780499956",
+    "business_id": "51755ca4-9144-5360-a6a3-802249df81e4",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "94c6fd6d-7965-59c1-a7b5-8fe1cf7d0fa8",
+    "business_id": "01580413-7fdf-5911-a8dc-154301e1544d",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5661d52b-a7ee-5895-a3b2-d53941287ad0",
+    "business_id": "a5d405ba-f92d-54b8-adee-e13fb4bf9c04",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ca9acfdd-9f77-5302-a830-091f21db1a5c",
+    "business_id": "b5dcd7e8-7072-5acd-ae36-7a3281517187",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b40fd852-eb3f-5e83-a097-4a3fd3fc4392",
+    "business_id": "039399a7-cd6e-55a6-a42f-ae8e3adb2835",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1b2a3594-9b8e-548b-a585-75ddf3df9cd6",
+    "business_id": "3c89f7a3-b283-5879-a206-a0b2b637e288",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "eac81d8f-1323-5088-a56a-01c583d6452d",
+    "business_id": "ae82910c-7c70-592a-adbc-d9a27f34f2cc",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b36fe647-93b6-54ef-a371-b970e212f7bc",
+    "business_id": "cbdbede0-b047-547c-a96e-a97ac392b572",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ffc42e61-c6be-5718-a0e4-fe435dbef09e",
+    "business_id": "0a386e3f-9c2a-53ca-a1c9-f0a09a6488c2",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bb0bb3cf-122c-5dea-a41c-2e82c13b643b",
+    "business_id": "89305a33-bc9a-5e9f-af62-f5cebc693b6f",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ca1bed7e-871b-5fff-ad41-fed03b852d47",
+    "business_id": "461c789b-24b5-5f24-a0f5-1f942e399a1a",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e3eedb2f-6e01-57ad-a520-a6483e5c652b",
+    "business_id": "b08b90a9-eefe-5a84-a134-717c6e553e78",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f227ce50-57c7-576b-a0a7-c4d58f0d727c",
+    "business_id": "0ce4d025-bed5-5d26-a239-b252a9f6d504",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8b3d6247-2660-540a-a7a6-a060ea67876b",
+    "business_id": "c72d662d-0b27-5e7b-a4d2-6baf010ab2a6",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ab9e24c3-dab6-5729-af9e-58179dd98d50",
+    "business_id": "6d5f28cc-d99c-530b-a4b3-7c13bb43d3c3",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3808625d-6e24-5682-a6ef-7130f778b7b1",
+    "business_id": "a01f046e-82b0-5703-a7c3-086cc182904f",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d547bdea-b64b-597a-a828-796a8fd77a73",
+    "business_id": "3b5c9aca-5895-54c8-a2d1-19a34552242b",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e0580044-81a1-51d9-a4e2-d5ecad7eafbd",
+    "business_id": "2749edd6-341f-58eb-a1ab-1bdb4b24e74e",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "4f1d25f0-a0f3-5e87-ace5-fa48007845b7",
+    "business_id": "d22624e6-d922-5940-ad56-482083826f7d",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ad31baa5-32d7-52bb-ab13-3ff68e97b617",
+    "business_id": "c7f24bf7-6a1a-5bc0-a5b2-6f497e698244",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a9e5321f-9f1c-5088-a8c3-1b2cc6a43e6b",
+    "business_id": "aaf1a4c6-78b8-570a-a27a-070d161b787f",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d62695c9-5ddb-54ec-a49b-56a7f30bb1e5",
+    "business_id": "234c0062-9e39-578e-a5bb-1b9b56de674a",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d72cc804-85dc-51dd-a2f5-91337ce4c579",
+    "business_id": "a67bb03f-e75e-521d-a1cd-1847e00a6267",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "70ea1fc0-cd9c-54a3-ac17-1acb2b8fb15c",
+    "business_id": "26ce58b1-097f-5240-a311-5d02293de9a3",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "85025d9f-b35d-55ce-a45c-16068abd1dc3",
+    "business_id": "a9a7a666-5ca7-5919-aef6-7bed6a7c5d57",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9c0d40e7-4f86-51b0-a440-8e1bfec98c98",
+    "business_id": "4b77ccf7-cced-56fa-aba6-c807edc40e16",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "30afa7ff-6717-570d-a4a0-01478388c539",
+    "business_id": "21115cbf-91e1-594b-a1e4-efd162cff7a1",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "22a14e9f-8d5f-5b8b-a956-1385087936c8",
+    "business_id": "e85c4166-46e9-597f-ad4c-88355daaa49d",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ec213503-e6c0-52f1-abd0-1edc0bd03347",
+    "business_id": "739cb32d-fb2b-516f-a971-1450517afaa8",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a61d9734-e611-5b5a-a8d3-4af050c5ac51",
+    "business_id": "cd332f17-5dc1-511a-afbc-34945302018c",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "385aa383-0cc2-5145-ae4c-6e8a36c44d94",
+    "business_id": "b34653ae-ca3f-5c4d-a3f1-d8d2c7f6a01e",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9221d5f1-0843-5d86-adc7-7b68a8f435a4",
+    "business_id": "5ed590bc-95bc-5b42-a09d-583e62cbb285",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "23a81537-43bf-5198-a00a-8dd8d37a93d4",
+    "business_id": "5fe99137-1f5b-58f4-a4e2-eaaee6455623",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "72e40bdb-f9ca-5db2-a27b-d3852ec3c8e7",
+    "business_id": "0e8002df-5544-52ca-a63e-8b5717f3e24d",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b747462a-cb8d-5603-aa69-075d1e5e099d",
+    "business_id": "e0ee3cc9-9dba-502f-a610-9138fe93ea50",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ab927d98-9ab9-5664-a45e-65d82cbc7450",
+    "business_id": "140f4291-1951-50f5-a708-0a05f5b2fbb6",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e42678ec-adf6-56fe-a98f-486d5ee3e45c",
+    "business_id": "5b734731-cd7c-59fe-ae07-6af259aa03c6",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ea19cfb0-e164-52c5-a057-168e24b1ff16",
+    "business_id": "3c00b497-d649-5cd9-a080-c7b89486895d",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e1c83bd1-f610-5a3d-ab95-13c5146ad85d",
+    "business_id": "a16f060c-62d3-5fb4-ab8c-05c4ae352f35",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5c5b5f3b-3491-5d8c-a4d2-a3af504a4704",
+    "business_id": "8bd2e070-66f6-5b00-ae3f-520da31d2c4e",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "51c7bcd1-bb9a-5e22-a66d-c7eb6290d0b4",
+    "business_id": "ec2b2694-382a-55c8-ae0b-e959a291cf38",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7df63038-617f-5180-abc5-b223e3b46ce9",
+    "business_id": "e8d140bf-2d3c-57b9-a4c9-e85c625afae0",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a34fd82a-08af-59ba-ae2f-02bbf5897614",
+    "business_id": "b76a2574-f9cd-52ac-a2a2-7e44b4845fd1",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ea4d83b6-267d-5f3f-ad5a-58f64fc67d58",
+    "business_id": "5313b6be-171a-5cc1-af3e-e33e128e83b5",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "370439fc-7126-511b-a6f5-d0fb94beb5bb",
+    "business_id": "5f37f398-55ad-545c-a4d4-94557eac6fb7",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "fb2524b5-46bb-5e4d-a23d-28fafabd8ad0",
+    "business_id": "9157d564-c0b7-59b5-a550-953260a9aad7",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7a99448d-0ee3-591f-a9cc-ebee25a9d044",
+    "business_id": "4674f712-be45-5f72-abd9-98647367068c",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "0a123c59-9681-50c6-ab40-cfe218a177a2",
+    "business_id": "8b00c84c-d536-5e24-acd9-d4b2b934d440",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e70aca41-dfec-5f98-aa4b-b43e57c76c05",
+    "business_id": "99f25e6e-6a74-5fb9-a187-cdda6cbcf794",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "26f72baa-2747-52bd-ae8c-f52746c0b7bb",
+    "business_id": "5e49019b-8529-5ed1-a200-d391179858f6",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e18a7815-7bf2-5b4b-a725-deec98915aae",
+    "business_id": "acd20276-01fe-5b51-ade9-77d0c881b151",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "89985607-b672-5a7b-add0-40ae98c724dd",
+    "business_id": "cd69904f-bea3-5be0-a311-4bfe86bdf47f",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "44b072a1-0a29-5bdf-a145-af2b616559cb",
+    "business_id": "53c0177b-6836-5276-afd5-3988d3d8e090",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "73b77770-e76f-50d4-a211-a134359e6692",
+    "business_id": "2b62e8e0-6687-55b2-a340-5524d1937d7e",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5d18d0d9-114d-56c4-a48a-bb6d8a2d0040",
+    "business_id": "5251ee1a-619f-5fff-a36a-13ecaf600ee8",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ecfef102-a785-5fdd-aa19-410ddf6069b4",
+    "business_id": "add93e23-9bf9-5c45-ae4e-6d0e89096c8e",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9cec957f-6943-5b77-a9bd-4d9ab878c3d9",
+    "business_id": "775f9dee-46ba-534e-a01a-3b7451d97328",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5b6b8d30-75f3-5711-aa86-822308261e9d",
+    "business_id": "5b5e090e-5248-5eb8-a297-8e5520924a53",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7c639a5e-47ab-5a67-a805-ff5f03b6a63c",
+    "business_id": "5229a4a9-1392-507e-aaac-d07ec98f23fd",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c750d167-2646-5c10-a00f-ede94e1d1774",
+    "business_id": "56a8e8ea-e59a-524c-a415-bc270dacbbe5",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8eab6c83-ed09-57c1-ae22-b6a8d4db7a5a",
+    "business_id": "6804183d-a4dc-532b-a5ba-92efe95dae01",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "42fd092c-7077-5a1c-a875-ea014b4d1eb2",
+    "business_id": "1809b729-9a87-519e-aad2-91ae5b1303af",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b5dad776-95c8-5567-a874-e17c0bd0fcf1",
+    "business_id": "c0ff4480-5436-56de-a0cc-c85a4fa10460",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3796e306-52d2-5e4e-aca6-2660f3417e95",
+    "business_id": "2cc1797a-1732-59fd-af52-6fc5149b5be4",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1dd52dbf-75f8-54ed-a6bf-d25b6a2298d7",
+    "business_id": "20396aa0-d31e-58b8-af64-d8b5fb15cb6f",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6ae5ed88-57ee-50d6-ae38-5f2a6418057b",
+    "business_id": "96b6a10d-bcfa-5eef-a925-47f494332b67",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "48dbbb57-accc-5223-adf8-4ceaa77d76b6",
+    "business_id": "11328861-4548-59c6-a342-d4096dfe8afa",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8d8da24e-12ac-5d9b-af75-bdb8792a73a0",
+    "business_id": "951b3479-452a-53e0-af87-880be73a2d38",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ec82a2f5-67e0-5eb4-a0ab-905a309bcc8d",
+    "business_id": "d8b8925e-9a14-53dd-adf2-5121760a12b6",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a672b85c-c0e9-53e0-a1ec-cd136cf3e6df",
+    "business_id": "1c9d3d17-3340-5a44-ae09-e27195ad57a3",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f3725d26-306b-569f-a017-6867906c24ab",
+    "business_id": "56c68a3b-abb0-507c-a5da-e3ef0f8c640a",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "cfb73a02-7d88-530f-a895-54ecfaeb9ef7",
+    "business_id": "e553c9c6-6572-5b0d-a35b-86a6b3657ff3",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "28f8337e-fb35-590b-a7c4-de08682d3b3f",
+    "business_id": "a584814b-b0af-5cc4-afee-4cf20b581e0e",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "83550eb0-1978-5713-ae5b-b4fd4f239c2b",
+    "business_id": "27d31386-109d-5a1c-ae25-a080e112ab82",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a8a3e448-69b4-5f3d-acc7-9ac9c3503a37",
+    "business_id": "61efe17c-1b8e-5e6d-af00-0052df5a9c65",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e8acfb9c-e57b-5705-a3dd-f3c3c6152614",
+    "business_id": "e79bf2ba-fbe9-53a3-a37b-bf8f69c57051",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9161b607-391b-594a-ad33-3d4a533d68cf",
+    "business_id": "b384837a-665d-5e1e-a542-fe39e9290d4f",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "75fa0308-230f-5cb4-a2e7-4440706ea71f",
+    "business_id": "2c26a2c0-25e1-51c1-a80e-696c2ee39cad",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "23aff446-0a88-59cc-a119-aac61bcd1686",
+    "business_id": "8602e317-0c70-5594-afc8-d55b7a59ebeb",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "aad1beaa-6bfa-5d01-aba5-c56cc0a85e96",
+    "business_id": "fae03230-ddef-5ee0-a6aa-7da2e46500cc",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "22ac2153-e3b9-5a85-aac2-20f775db21bd",
+    "business_id": "34072472-0d3a-5935-a658-5ba676c7c71d",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "cf0b7ebf-a1dd-543e-ad24-6e861611af60",
+    "business_id": "30f08ca5-ec6a-5d4a-ab82-3530eb80c7d0",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f634d865-d8b5-578f-ace3-16ea08c4ce93",
+    "business_id": "ad7051b0-3f0e-55ab-ad93-d07191add2b9",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f96c0c78-b7fc-5ce1-a119-7b8b56e25cc3",
+    "business_id": "808cd61e-3d76-5eac-a2be-36f2a84be5b2",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "75279016-671d-5be3-a404-ae57fa051d11",
+    "business_id": "a994a20b-5301-5090-ae6c-bbbd15705b16",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "206ebf0d-2aec-52fc-a5a3-39330bf4f940",
+    "business_id": "587a4ac7-2a6e-5f7d-ad15-c3bcfa85047d",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "cd8797a6-9fcf-597a-ae30-96109cb80cd5",
+    "business_id": "64ecaa1e-12e0-5d01-a6c0-8a6e15c2cb79",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9c70af96-e0a9-5716-a36a-00474828acc5",
+    "business_id": "0a8db659-0fc4-5e76-a3ed-b5e6128a34c9",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bd9b6782-aa2f-508b-ac5d-3e7c2be50eaf",
+    "business_id": "94c6987a-a875-588f-a3f3-1728ee0433a8",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1e96a73f-0446-5f93-a564-964b340aeed9",
+    "business_id": "81ad8762-354b-51ee-a168-395c5f46abe5",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1b1847d8-cb50-5465-a26c-bbcfb7d7a56f",
+    "business_id": "1ee30981-58d3-5953-afc1-df588b3a0c9d",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "899f2ad2-8625-562c-a010-c3f3d9993bd4",
+    "business_id": "f66b4d3e-a0e7-550b-ac86-64868f43d24f",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "597d8124-a8f3-51b6-a23e-5cc07b01138c",
+    "business_id": "e4091e73-653d-5f32-ae6c-2cbfae138065",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "27a7eae4-1b4f-5e10-a80b-f0a485bd90ac",
+    "business_id": "1d487981-c95d-5de7-a81e-dd503352211a",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "127ab6e7-5035-58ed-a431-69a975cd5072",
+    "business_id": "51eb11f1-de7f-5788-a0fd-a969468e8501",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ce32e80b-be01-5e2b-a104-7cf388dce919",
+    "business_id": "cbd66158-6e9d-5905-a286-c0919e50a6f5",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3c8b4a12-9277-51bc-a40a-b9f15040a027",
+    "business_id": "e407d157-24d6-581a-aa0f-c5ecd003a1c5",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "07006f5b-dbf1-5cab-a6e1-96f7e38becf4",
+    "business_id": "8b6012bc-cf8c-55ac-a527-1de30d35cc82",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e179c627-b738-5d0f-a963-2648ca563838",
+    "business_id": "d2c80191-2ab8-5983-addd-b9fbacb81b6a",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f65d2c5c-ab39-5bce-a794-cb06f4bef0a8",
+    "business_id": "b9381a46-6e34-5cf4-a682-e417478a4136",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a64b0580-97af-5c47-a69d-4ccf03a2172d",
+    "business_id": "559594ff-a2b9-58d4-a925-e756e9b5894e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "2580fe26-63c8-5619-a59b-94e091b88adc",
+    "business_id": "3b6ef837-f136-56ae-acf9-c0713f9b9ee4",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "474c9010-cceb-5e7c-acc3-398882bdd8ba",
+    "business_id": "51acb758-92fd-5097-a963-ac49835fab50",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ad893620-375f-5385-a0ad-d62c690bd818",
+    "business_id": "8d8f7262-e2ac-5487-a898-c17071646ce0",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3126179a-2be9-5d0a-a99d-fc20c9f1b286",
+    "business_id": "cafcce9e-99e0-54d8-a922-add94426ea3d",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c1f0d96f-6843-5f6f-aeec-638841bc3764",
+    "business_id": "8e9fb670-be63-57ac-ae00-21e89a8847e0",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "61ead09c-fd2f-5118-a327-80305f393436",
+    "business_id": "735990ae-8af4-5a63-a834-99ca30be3576",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1fab726d-6aed-5bc0-a362-cfd77bc4829b",
+    "business_id": "a9950be8-009b-507f-a5d6-5749a8371113",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ccef3026-08b7-51de-a66a-0072bbc6741b",
+    "business_id": "6c4ab1bb-f913-5e8b-a215-f4176f66424e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "354d8047-a123-52d8-a94b-f30c6efc1c67",
+    "business_id": "d6c4c717-33d8-5a4c-a095-94dc8d700abf",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "673b7766-ce3c-574e-ac91-1dfc4e88e836",
+    "business_id": "b71e1825-f9ed-58fb-a2ba-0c6e57daf953",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d91c4062-1cf6-5f35-a9a8-aa8450865b04",
+    "business_id": "728cf6e7-935c-5e70-a4ff-d2c00a9b85ab",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ecd37a86-1f4e-5f3a-a3fc-efaf70e4a5e7",
+    "business_id": "5b861759-5405-5910-aabf-a99b00b79133",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "71648cdd-5592-528c-ad54-73419d81c719",
+    "business_id": "c78dd636-7bc7-5ccd-abab-20e4cbba90e0",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e5dfebd4-9f73-5933-a502-215bc9f8fd3f",
+    "business_id": "3ebd2490-98e7-5e7f-ab09-c347005abf32",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "28f27f80-2136-5620-aecf-36f0a7492423",
+    "business_id": "f8f02988-ba87-5ed6-ad67-ed254defd92d",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ed8eb796-0951-549a-a916-2f9987e1e6c9",
+    "business_id": "be612bf6-45b0-5adc-a3b3-a1d43c208d90",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "23e6284a-c80d-5382-a6f5-950625da2d11",
+    "business_id": "309f3313-a925-5c45-ab3c-efe625e33a4f",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6f2cf5fa-dfb2-52c2-ad47-d943db2d8197",
+    "business_id": "fdadbb6a-91dd-57c8-a766-9febb06ccb9e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5fd52e2c-ba71-5f02-a5c3-16b664b2568f",
+    "business_id": "dad0d116-a666-589a-a25d-62aab289afe6",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d9a2070a-239b-57a1-a947-3fcccbf3cfc8",
+    "business_id": "059f3495-739d-5a0b-aacb-d032042d995a",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "365c9692-13eb-5edc-aff5-0eb25bf75033",
+    "business_id": "d64137a1-2a7e-5b41-ae57-7ae622eb17f4",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6fa598ef-1b17-54b0-a665-f467660a8afa",
+    "business_id": "fd61beef-bc5d-58ba-a98f-387137ec05e3",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "11346bfb-26bb-5ff6-a6fc-a7f6ab044a9c",
+    "business_id": "450942dd-5f59-5746-aa8f-953b598bbce3",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "be2928e1-4fc6-576d-a593-1d5e74abd33c",
+    "business_id": "9be90ba3-830e-52fe-aeaa-17e79ad4c13e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ece3a0ad-a50d-544b-a9f0-aa52bcb8b6f6",
+    "business_id": "acbe503d-0c56-549a-a134-1d3ecec251ff",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "53857e07-25bb-556a-a034-a2decd870c79",
+    "business_id": "c60d4933-e239-5f0c-a061-25660a336a69",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9589d7ef-3412-520b-a31e-2bb8854c0a47",
+    "business_id": "848da29c-f728-51ce-a387-ad66183da3b1",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a9591bea-2a0a-57a5-a700-ee53ff86cc98",
+    "business_id": "cc86815e-e204-58b7-a1c6-c642835631b5",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "d028e40d-bfd1-58c7-abfb-c38e916afeaf",
+    "business_id": "357f087f-1d05-5548-a8d8-98de4d81e04e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "123618da-1dec-5f76-a2be-80e5dbc09c1f",
+    "business_id": "5fd1204e-e43d-56c4-a059-1004f0fd617f",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9899ead8-6a39-5b83-abc7-90eca9d50af6",
+    "business_id": "b534f8a6-a1e1-5425-a2d2-4a06566da11f",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5e45b61c-3e84-5a12-aca0-babe2f34bf1c",
+    "business_id": "c218965d-fbc1-5518-af1d-6fc86c5b066e",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "09870606-70ef-58a6-a67b-e5858e606c21",
+    "business_id": "d79cf1ba-e246-5094-afdb-51f6af6bfdf1",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "599c8ca4-417d-5719-a1a9-440ea4024110",
+    "business_id": "b5fda512-9abd-55f2-a5b9-55f022b87e8c",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6e6f5b3c-294c-5a3f-a69c-0d34c9a515be",
+    "business_id": "fc3fe791-9cf8-50c1-ab91-add19bae660c",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "0fe1c041-c096-5e70-aa15-a158a1de640d",
+    "business_id": "4f97b2d9-ece8-5707-a913-283b6678aba5",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "1ca63a2f-a626-5501-a871-37d521754937",
+    "business_id": "afb6e6a8-0069-5c6f-a9f8-8019ef82471b",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7847b049-0a3f-579e-a3ae-e70c2c460917",
+    "business_id": "83afcb30-6141-56e9-acfb-76ab6d185508",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "79468416-c1e5-54db-ac31-ddb0cf34724c",
+    "business_id": "0c815633-5534-55bb-aa33-30ddbb71b6b9",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8c97df21-39c2-5e07-ab2a-16ef04db1974",
+    "business_id": "1e550db1-a4eb-5e39-a088-c02aacd39377",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "67f02c37-e148-57f7-ad2c-e330dc90c5b2",
+    "business_id": "463a66f9-30fa-585f-a524-7299c1e2b005",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "acb39323-67da-5067-a454-0ab6c73fbc94",
+    "business_id": "df5927e7-8051-5b50-ae8b-90bd423dc6a4",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a70fff16-1aa2-5438-a050-7f9ae167a2e7",
+    "business_id": "e015c8eb-2289-570b-a6c5-8ecf033f7ccc",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "cdd8e48b-4a08-504e-ac98-744cb18afee3",
+    "business_id": "fef2a727-b8dd-50d2-ad13-c94cba0b26c2",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "865473a8-b425-580a-aab3-0d5935711983",
+    "business_id": "c31178fa-22af-5418-ae0f-57be02e6a47f",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6041a397-969b-5e5b-aa78-b545a4bec4ed",
+    "business_id": "30ca8537-1e30-5846-a053-8e0ef4142481",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "080391dd-785a-59fa-a3ab-b53e1f3bc90f",
+    "business_id": "71ce7deb-9355-5c40-abd5-0ce93c147bb8",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c793f941-aa40-56b5-adcd-692b206ca5ac",
+    "business_id": "41572f98-08da-589c-adc7-1f39c8cc81a8",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c1bd2946-2a2f-57a9-ae60-d932d34bc099",
+    "business_id": "7087419e-594f-50ae-aa33-d29666dc10bc",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a8d3e07f-fbd4-58f4-a982-ee2653698f73",
+    "business_id": "010e0120-867c-5204-a554-60f05a70ef95",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6a2e63b7-440e-5ba4-a258-0a418ae8e985",
+    "business_id": "759c0dd9-fa6d-559d-a6fc-328a95e74adf",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "0a67d3c4-81fb-5f35-a3e6-2be0e889cd63",
+    "business_id": "8bc5787e-04ad-54b2-a612-f497401a42da",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "76b4de09-b9ec-548a-a679-37651831d52b",
+    "business_id": "2ffcc9ea-f8f8-56de-aaaa-3ac955f573cf",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9771b7ee-3715-5171-a8d4-d72c4f4cdc34",
+    "business_id": "edd59c4b-1f12-54f3-a3c5-4209011a3c4e",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "370ce8c7-d44f-56f5-a353-50957fac0949",
+    "business_id": "3b1fc65b-5c70-5fe0-a5c0-7e8361ac00b4",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "f62cd28c-4eda-57bc-a84c-e8af3c00a634",
+    "business_id": "aab3170e-3c9f-5f59-a132-8c8b4bcc0606",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c3d88c15-38f6-51dc-aaff-99f91d8d967e",
+    "business_id": "c7d7c9c5-b5fd-50d0-a3c3-36402a9335cb",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b8544740-e88b-5d78-a3c8-3bb49304265d",
+    "business_id": "f771bf4d-eba3-539f-a609-229729575782",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3bdfaceb-97f9-51c4-a6cf-6eb6418aa144",
+    "business_id": "211fcef2-ee24-5ea1-a8f1-83a2cf3fd94f",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6b541031-748c-58c4-a777-22bab52479f2",
+    "business_id": "b8a916dd-ab94-5717-aae2-0bdf2533e2ce",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9ac12cb5-2cba-55ff-a013-978a2d7fd9e8",
+    "business_id": "d245ebd1-6117-5906-a92f-4a8114fa8aa9",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "074e0d51-94d6-5fac-a662-51b7503af82a",
+    "business_id": "69c05514-ebbd-576f-afc7-b15395233015",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "32437cc2-7fb6-5c08-ac20-e01d63fe1c92",
+    "business_id": "84a0b411-d927-581e-a53f-3767078f8ff4",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b1f6bcbb-2cad-5cca-a0c9-b2313e009548",
+    "business_id": "f0d2db76-63e2-54de-a68c-a70d9c7d1077",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c9e108a9-9ebc-5ffd-a9f9-083e6a728b28",
+    "business_id": "2a8bdb01-38e1-5c9e-a184-3271b843e554",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "e79b945c-8790-550e-a996-0b73db1e2173",
+    "business_id": "2d3b5711-eb68-5819-ab34-9230f9cd6a98",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "174b1626-60ef-53d4-a214-b84b6df7b915",
+    "business_id": "1a8ad957-55b6-52d1-af41-fed32919acfe",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "50530747-d005-5253-a6a0-a269260151d9",
+    "business_id": "d573c568-1473-531c-affd-2e123f0af175",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "5033fb4b-2372-5807-ae06-a64404fe7d34",
+    "business_id": "b2201214-24dd-5fb7-a20d-2a80f645f178",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "0b391498-8601-5b9f-a9a0-c72ba46826e9",
+    "business_id": "45ee9cc6-f609-5937-a2e5-1aec53d1e1c6",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "566d9343-ff3e-5033-a761-74deb001144b",
+    "business_id": "f5080a3b-44ae-5bca-ae23-c08dead179e4",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "65af70f7-de41-58d4-a6a2-97a914ff07d9",
+    "business_id": "57c2a634-ebaf-50e0-a6ee-354bbcb36028",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "2c5d87c8-8420-5a4f-aaf8-fc40d1849bfa",
+    "business_id": "bd776ef8-4db4-584b-aa2c-52c9ed11897f",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "66b74f00-1afc-5637-a9b7-88fcafe0b69c",
+    "business_id": "c0437103-5042-5453-a788-7b5d71a47f52",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a0c46252-beb7-541d-ae8b-7ad282855436",
+    "business_id": "f86945c5-41ec-592b-a651-57c4c250eb5d",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "8c088d06-d3f2-5d57-ad19-18ba77a76d15",
+    "business_id": "bacd6d58-b5d2-5409-a116-887f955c7ba4",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bab33ff1-5381-50d6-aa2a-4fde0cce3a26",
+    "business_id": "8eaca6d0-ee6d-56a3-a8ff-64e7a76fc7a8",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6aa2e6e9-2887-5ce0-a990-5a3db805469f",
+    "business_id": "98d45742-96dc-5405-a13a-ee98d92fc9f0",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c9ac83f5-2762-569b-af6f-056acbc65cdb",
+    "business_id": "aff2dcf5-daf3-587d-a20b-bdb88e4aad03",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "777bd7c4-63e0-5ba4-a008-76f99b6b9305",
+    "business_id": "8ae55455-940b-5fb1-a70b-9e00011870d7",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "b63f055e-0e29-542a-acd2-6f6e94a5e543",
+    "business_id": "2641e6f4-6d25-5289-ac8e-8bb7728a694d",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "86b04e9a-8284-5835-a3bd-f23132d92a64",
+    "business_id": "61922bad-8db6-5961-ab20-ff1170f09888",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ee2ba0a3-3e1f-5d7b-a9a8-54b0067e991e",
+    "business_id": "9740334d-35c1-5de6-a7d8-88b222c20057",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7bc7c591-0b44-5fe4-a208-aa8bf1a34160",
+    "business_id": "595a6d61-6958-5988-a195-d31487c7cb79",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bfaea935-bee7-5cf3-a44d-4445fd408b71",
+    "business_id": "a7d77ddf-5cac-5861-afcd-16c500840251",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "fd850313-2706-504b-a6a0-d95141b929ec",
+    "business_id": "552bf7fb-8ad3-5bc5-a108-7981e1c03a55",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "9c2fc07d-e463-565d-a2be-e95058815a2d",
+    "business_id": "19962f00-8920-523d-a950-a1838f3947b8",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "6547c1bf-fda6-5eca-a504-eec911c55902",
+    "business_id": "801161e1-dc1d-5113-a131-f95577e92e41",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "7b60f10c-cf87-5a1a-ae18-17fbe8d50ff5",
+    "business_id": "91e81487-8438-57a3-a03c-9d17d278e0c2",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "431ba41a-ff5b-5734-ab6a-8fd54dd83d37",
+    "business_id": "0356a64d-ee22-5d92-ac72-cdc0fd9eb219",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "ff5406e1-65be-509d-a8e4-e0251df4018b",
+    "business_id": "0dc95b30-6854-51bb-a122-b6ad30fd8353",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "589820c3-7019-5bbc-a515-b46cd84309f1",
+    "business_id": "37443bbb-df94-5f06-a635-772480bd5d23",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "3396a1a1-66e2-53ca-ac82-73c7a855d166",
+    "business_id": "7d2fbbf3-788f-5669-a5d8-78579bbad15f",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "a475072f-2313-54c0-a5f5-85d6859f7b47",
+    "business_id": "37ece7da-215e-59a5-acaf-2344b051b2a1",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "bc75eb6b-2d02-5ddb-a7bf-da0d46b30fa2",
+    "business_id": "3fbb5b78-bcff-51f9-a17d-8d9d085bc591",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "164ee8f6-8146-596f-a61a-ee788952adfb",
+    "business_id": "ba28f67d-9417-5f73-aba8-f2bae8c074dc",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "c8c0e144-b488-5d41-a791-9ac8419d4f89",
+    "business_id": "72ef79fe-a9d7-56a9-a21a-07e2fe20c3ba",
+    "type": "verified",
+    "source": "admin",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "68569325-148d-5c18-a3e4-6fb0143b91d2",
+    "business_id": "6adb5134-3c78-5658-af66-e2a0ba1fc91a",
+    "type": "featured",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  },
+  {
+    "id": "2bd15c03-a350-519c-abdf-ab19e2af82a5",
+    "business_id": "0e7e7419-e5ae-5371-a22b-799b6500ac68",
+    "type": "top_rated",
+    "source": "system",
+    "active": true,
+    "starts_at": null,
+    "ends_at": null
+  }
+]

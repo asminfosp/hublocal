@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { useState } from "react"
 import {
   Building2,
@@ -9,7 +10,9 @@ import {
   Home,
   LogIn,
   Menu,
+  Route,
   Search,
+  ShoppingBag,
   Sparkles,
   Store,
   User,
@@ -19,10 +22,11 @@ import {
 } from "lucide-react"
 
 const desktopNav = [
-  { label: "Explorar", href: "/", active: true },
-  { label: "Categorias", href: "/buscar" },
+  { label: "Inicio", href: "/" },
+  { label: "Servicos", href: "/servicos" },
+  { label: "Shop", href: "/shop" },
+  { label: "Mobilidade", href: "/mobilidade" },
   { label: "Empresas", href: "/buscar?filter=verified" },
-  { label: "Servicos", href: "/buscar?category=Servicos" },
 ]
 
 type MobileNavItem =
@@ -31,7 +35,10 @@ type MobileNavItem =
 
 const mobileNav: MobileNavItem[] = [
   { icon: Home, label: "Inicio", href: "/" },
-  { icon: Compass, label: "Categorias", href: "/buscar" },
+  { icon: Wrench, label: "Servicos", href: "/servicos" },
+  { icon: ShoppingBag, label: "Shop", href: "/shop" },
+  { icon: Route, label: "Mobilidade", href: "/mobilidade" },
+  { icon: Compass, label: "Descobrir", href: "/buscar" },
   { icon: Building2, label: "Empresas", href: "/buscar?filter=verified" },
   { icon: Heart, label: "Favoritos", future: true },
   { icon: User, label: "Perfil", future: true },
@@ -52,6 +59,29 @@ function LogoMark() {
 
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
+  const activeSection =
+    pathname === "/"
+      ? "Inicio"
+      : pathname.startsWith("/empresa/")
+        ? "Empresas"
+        : pathname === "/buscar"
+          ? "Buscar"
+          : pathname === "/servicos"
+            ? "Servicos"
+            : pathname === "/shop"
+              ? "Shop"
+              : pathname === "/mobilidade"
+                ? "Mobilidade"
+                : ""
+
+  function isActive(label: string) {
+    return activeSection === label
+  }
+
+  function isMobileActive(label: string) {
+    return isActive(label) || (activeSection === "Buscar" && label === "Descobrir")
+  }
 
   return (
     <>
@@ -66,8 +96,9 @@ export function GlobalNav() {
               <Link
                 key={item.label}
                 href={item.href}
+                aria-current={isActive(item.label) ? "page" : undefined}
                 className={`rounded-full px-4 py-2 text-sm font-black transition hover:bg-white/10 hover:text-white ${
-                  item.active ? "bg-white/10 text-white" : "text-white/60"
+                  isActive(item.label) ? "bg-[#FF6B00] text-white shadow-[0_8px_24px_rgba(255,107,0,0.22)]" : "text-white/60"
                 }`}
               >
                 {item.label}
@@ -78,27 +109,30 @@ export function GlobalNav() {
           <div className="hidden items-center gap-2 md:flex">
             <Link
               href="/buscar"
-              className="flex h-11 items-center justify-center gap-2 rounded-full bg-white/8 px-4 text-sm font-black text-white/76 ring-1 ring-white/10 transition hover:bg-white/12 hover:text-white"
+              aria-current={isActive("Buscar") ? "page" : undefined}
+              className={`flex h-11 items-center justify-center gap-2 rounded-full px-4 text-sm font-black ring-1 transition ${
+                isActive("Buscar")
+                  ? "bg-[#FF6B00] text-white ring-[#FF6B00] shadow-[0_8px_24px_rgba(255,107,0,0.22)]"
+                  : "bg-white/8 text-white/76 ring-white/10 hover:bg-white/12 hover:text-white"
+              }`}
             >
-              <Search className="size-4 text-[#FF6B00]" />
+              <Search className={`size-4 ${isActive("Buscar") ? "text-white" : "text-[#FF6B00]"}`} />
               Buscar
             </Link>
-            <button
-              type="button"
+            <Link
+              href="/cadastrar-empresa"
               className="flex h-11 items-center justify-center gap-2 rounded-full bg-[#FF6B00]/16 px-4 text-sm font-black text-orange-100 ring-1 ring-[#FF6B00]/24"
-              title="Disponivel na proxima camada"
             >
               <Store className="size-4" />
               Cadastrar Empresa
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              href="/entrar"
               className="flex h-11 items-center justify-center gap-2 rounded-full bg-white px-4 text-sm font-black text-neutral-950 transition hover:-translate-y-0.5"
-              title="Disponivel na proxima camada"
             >
               <LogIn className="size-4" />
               Entrar
-            </button>
+            </Link>
           </div>
 
           <button
@@ -152,8 +186,13 @@ export function GlobalNav() {
                   <Link
                     key={item.label}
                     href={item.href}
+                    aria-current={isMobileActive(item.label) ? "page" : undefined}
                     onClick={() => setIsOpen(false)}
-                    className="flex h-14 items-center gap-3 rounded-[22px] bg-white/8 px-4 text-sm font-black text-white ring-1 ring-white/10 transition active:scale-[0.99]"
+                    className={`flex h-14 items-center gap-3 rounded-[22px] px-4 text-sm font-black text-white ring-1 transition active:scale-[0.99] ${
+                      isMobileActive(item.label)
+                        ? "bg-[#FF6B00] ring-[#FF6B00]"
+                        : "bg-white/8 ring-white/10"
+                    }`}
                   >
                     <Icon className="size-5 text-[#FF6B00]" />
                     {item.label}
@@ -170,13 +209,14 @@ export function GlobalNav() {
               <p className="mt-2 text-sm font-medium leading-6 text-white/58">
                 A melhor porta de entrada para a economia local.
               </p>
-              <button
-                type="button"
+              <Link
+                href="/cadastrar-empresa"
+                onClick={() => setIsOpen(false)}
                 className="mt-4 flex h-12 w-full items-center justify-center gap-2 rounded-[20px] bg-[#FF6B00] text-sm font-black text-white"
               >
                 <Wrench className="size-4" />
                 Cadastrar Empresa
-              </button>
+              </Link>
             </div>
           </aside>
         </div>

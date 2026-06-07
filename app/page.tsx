@@ -16,12 +16,8 @@ import {
 
 import { BottomNav } from "@/components/bottom-nav"
 import { BusinessCard } from "@/components/business-card"
-import {
-  businesses,
-  categoryOptions,
-  getBusinessesByBadge,
-  popularSearches,
-} from "@/lib/hub-data"
+import { hubRepositories } from "@/src/application/repositories"
+import type { Business } from "@/src/modules/businesses/domain/business"
 
 const categoryIcons = {
   Alimentacao: Utensils,
@@ -41,57 +37,6 @@ const categoryCopy = {
   Pet: "Banho, tosa, veterinarios e produtos",
 }
 
-const nearbyBusinesses = [...businesses].sort((a, b) => a.distanceMeters - b.distanceMeters)
-const verifiedBusinesses = getBusinessesByBadge("Empresa Verificada", 10)
-const mostSearchedBusinesses = getBusinessesByBadge("Mais Procurado", 10)
-const topRatedBusinesses = [...businesses].sort((a, b) => b.rating - a.rating).slice(0, 10)
-const openBusinesses = businesses.filter((business) => business.isOpen).slice(0, 10)
-
-const signalStats = [
-  { value: `${businesses.length}+`, label: "negocios locais" },
-  { value: "4.8", label: "media de avaliacao" },
-  { value: `${verifiedBusinesses.length}`, label: "verificados" },
-]
-
-const discoveryRails = [
-  {
-    eyebrow: "Confianca",
-    title: "Empresas Verificadas",
-    href: "/buscar?filter=verified",
-    items: verifiedBusinesses,
-  },
-  {
-    eyebrow: "Movimento",
-    title: "Mais Procurados",
-    href: "/buscar?filter=top",
-    items: mostSearchedBusinesses,
-  },
-  {
-    eyebrow: "Regiao",
-    title: "Destaques da Regiao",
-    href: "/buscar?filter=top",
-    items: topRatedBusinesses,
-  },
-  {
-    eyebrow: "Agora",
-    title: "Abertos Agora",
-    href: "/buscar?filter=open",
-    items: openBusinesses,
-  },
-  {
-    eyebrow: "Novidades",
-    title: "Novos Negocios",
-    href: "/buscar?filter=nearby",
-    items: [...businesses].sort((a, b) => Number(b.trustedSince) - Number(a.trustedSince)).slice(0, 10),
-  },
-  {
-    eyebrow: "Perto",
-    title: "Mais Proximos",
-    href: "/buscar?filter=nearby",
-    items: nearbyBusinesses.slice(0, 10),
-  },
-]
-
 function BusinessRail({
   eyebrow,
   title,
@@ -101,7 +46,7 @@ function BusinessRail({
   eyebrow: string
   title: string
   href: string
-  items: typeof businesses
+  items: Business[]
 }) {
   return (
     <section className="pt-10 md:pt-12">
@@ -127,7 +72,33 @@ function BusinessRail({
   )
 }
 
-export default function HomePage() {
+export default async function HomePage() {
+  const discovery = hubRepositories.discovery
+  const [all, categories, popularSearches, verifiedBusinesses, trendingBusinesses, nearbyBusinesses, open] =
+    await Promise.all([
+      discovery.search({}),
+      discovery.getCategories(),
+      discovery.getPopularSearches(),
+      discovery.getFeatured({ limit: 10 }),
+      discovery.getTrending({ limit: 10 }),
+      discovery.getNearby({ limit: 10 }),
+      discovery.search({ openNow: true, limit: 10 }),
+    ])
+  const openBusinesses = open.items
+  const signalStats = [
+    { value: `${all.total}+`, label: "negocios locais" },
+    { value: "4.8", label: "media de avaliacao" },
+    { value: `${verifiedBusinesses.length}`, label: "verificados" },
+  ]
+  const discoveryRails = [
+    { eyebrow: "Confianca", title: "Empresas Verificadas", href: "/buscar?filter=verified", items: verifiedBusinesses },
+    { eyebrow: "Movimento", title: "Mais Procurados", href: "/buscar?filter=top", items: trendingBusinesses },
+    { eyebrow: "Regiao", title: "Destaques da Regiao", href: "/buscar?filter=top", items: trendingBusinesses },
+    { eyebrow: "Agora", title: "Abertos Agora", href: "/buscar?filter=open", items: openBusinesses },
+    { eyebrow: "Novidades", title: "Novos Negocios", href: "/buscar?filter=nearby", items: nearbyBusinesses },
+    { eyebrow: "Perto", title: "Mais Proximos", href: "/buscar?filter=nearby", items: nearbyBusinesses },
+  ]
+
   return (
     <div className="min-h-screen overflow-hidden bg-[#090B10] text-white">
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(135deg,rgba(255,107,0,0.16)_0%,transparent_28%),linear-gradient(180deg,#090B10_0%,#11141D_58%,#090B10_100%)]" />
@@ -205,7 +176,7 @@ export default function HomePage() {
                     <span className="block max-w-28 truncate">{business.name}</span>
                     <span className="mt-1 flex items-center gap-1 text-[#FF6B00]">
                       <Star className="size-3 fill-[#FF6B00]" />
-                      {business.rating.toFixed(1)}
+                      {(business.rating ?? 0).toFixed(1)}
                     </span>
                   </Link>
                 )
@@ -241,12 +212,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {categoryOptions.map((category, index) => {
-              const Icon = categoryIcons[category.id]
+            {categories.map((category, index) => {
+              const Icon = categoryIcons[category.name as keyof typeof categoryIcons] ?? Sparkles
               return (
                 <Link
                   key={category.id}
-                  href={`/buscar?category=${category.id}`}
+                  href={`/buscar?category=${category.slug}`}
                   className={`group min-h-44 overflow-hidden rounded-[30px] border border-white/10 bg-[#11141D] p-5 shadow-[0_22px_70px_rgba(0,0,0,0.2)] transition hover:-translate-y-1 hover:border-[#FF6B00]/40 ${
                     index === 0 ? "lg:col-span-2" : ""
                   }`}
@@ -257,9 +228,9 @@ export default function HomePage() {
                     </span>
                     <ArrowRight className="size-5 text-white/34 transition group-hover:translate-x-1 group-hover:text-[#FF6B00]" />
                   </div>
-                  <h3 className="mt-6 text-2xl font-black text-white">{category.label}</h3>
+                  <h3 className="mt-6 text-2xl font-black text-white">{category.name}</h3>
                   <p className="mt-2 max-w-sm text-sm font-medium leading-6 text-white/58">
-                    {categoryCopy[category.id]}
+                    {categoryCopy[category.name as keyof typeof categoryCopy] ?? category.description}
                   </p>
                 </Link>
               )

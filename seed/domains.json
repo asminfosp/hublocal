@@ -1,0 +1,23 @@
+[
+  {
+    "id": "services",
+    "name": "Servicos",
+    "description": "Prestadores e atividades executadas localmente.",
+    "sort_order": 1,
+    "active": true
+  },
+  {
+    "id": "shop",
+    "name": "Shop",
+    "description": "Lojas, comercio local e referencias de produtos.",
+    "sort_order": 2,
+    "active": true
+  },
+  {
+    "id": "mobility",
+    "name": "Mobilidade",
+    "description": "Opcoes locais de deslocamento e logistica.",
+    "sort_order": 3,
+    "active": true
+  }
+]

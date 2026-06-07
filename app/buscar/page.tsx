@@ -1,6 +1,5 @@
 import Link from "next/link"
 import {
-  ArrowLeft,
   Search,
   ShieldCheck,
   SlidersHorizontal,
@@ -10,11 +9,8 @@ import {
 
 import { BottomNav } from "@/components/bottom-nav"
 import { BusinessCard } from "@/components/business-card"
-import {
-  categoryOptions,
-  popularSearches,
-  searchBusinesses,
-} from "@/lib/hub-data"
+import { hubRepositories } from "@/src/application/repositories"
+import type { DiscoveryQuery } from "@/src/modules/discovery/domain/discovery"
 
 type SearchPageProps = {
   searchParams?: Promise<{
@@ -48,34 +44,38 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
   const q = params.q ?? ""
   const category = params.category ?? ""
   const filter = params.filter ?? ""
-  const results = searchBusinesses(q, category, filter)
-  const activeCategory = categoryOptions.find((item) => item.id === category)
-  const title = q || activeCategory?.label || "Economia local"
+  const [categories, popularSearches] = await Promise.all([
+    hubRepositories.discovery.getCategories(),
+    hubRepositories.discovery.getPopularSearches(),
+  ])
+  const activeCategory = categories.find((item) => item.slug === category || item.id === category)
+  const discoveryQuery: DiscoveryQuery = {
+    term: q,
+    categoryId: activeCategory?.id,
+    openNow: filter === "open" || undefined,
+    verified: filter === "verified" || undefined,
+    sort: filter === "nearby" ? "nearby" : filter === "top" ? "top_rated" : "relevance",
+  }
+  const result = await hubRepositories.discovery.search(discoveryQuery)
+  const results = result.items
+  const title = q || activeCategory?.name || "Economia local"
 
   return (
     <div className="min-h-screen overflow-hidden bg-[#090B10] pt-[72px] text-white">
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(135deg,rgba(255,107,0,0.14)_0%,transparent_30%),linear-gradient(180deg,#090B10_0%,#11141D_55%,#090B10_100%)]" />
       <div className="pointer-events-none fixed inset-0 opacity-[0.16] [background-image:linear-gradient(90deg,rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(rgba(255,255,255,.08)_1px,transparent_1px)] [background-size:60px_60px]" />
 
-      <header className="sticky top-[72px] z-50 border-b border-white/10 bg-[#090B10]/88 backdrop-blur-2xl">
-        <div className="mx-auto max-w-[1440px] px-4 py-3 md:px-8">
+      <div className="relative mx-auto max-w-[1440px] px-4 pt-8 md:px-8 md:pt-10">
+        <div className="rounded-[30px] border border-white/10 bg-white/7 p-3 shadow-[0_22px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl">
           <div className="flex items-center gap-2">
-            <Link
-              href="/"
-              aria-label="Voltar"
-              className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/8 text-white ring-1 ring-white/12 transition active:scale-95"
-            >
-              <ArrowLeft className="size-5" />
-            </Link>
-
             <form action="/buscar" className="min-w-0 flex-1">
-              <div className="flex h-12 items-center gap-2 rounded-[20px] bg-white px-4 text-neutral-950 shadow-[0_14px_34px_rgba(0,0,0,0.24)]">
+              <div className="flex h-14 items-center gap-2 rounded-[22px] bg-white px-4 text-neutral-950 shadow-[0_14px_34px_rgba(0,0,0,0.24)] md:px-5">
                 <Search className="size-5 shrink-0 text-[#FF6B00]" />
                 <input
                   name="q"
                   defaultValue={q}
                   placeholder="Buscar no Hub Local"
-                  className="h-full min-w-0 flex-1 bg-transparent text-[15px] font-bold outline-none placeholder:text-neutral-500"
+                  className="h-full min-w-0 flex-1 bg-transparent text-[15px] font-bold outline-none placeholder:text-neutral-500 md:text-base"
                 />
                 {category && <input type="hidden" name="category" value={category} />}
               </div>
@@ -84,16 +84,16 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
             <Link
               href={buildSearchHref({ q, category, filter: "open" })}
               aria-label="Filtrar resultados"
-              className="flex size-11 shrink-0 items-center justify-center rounded-[18px] bg-[#FF6B00] text-white shadow-[0_12px_28px_rgba(255,107,0,0.28)] transition active:scale-95"
+              className="flex size-14 shrink-0 items-center justify-center rounded-[22px] bg-[#FF6B00] text-white shadow-[0_12px_28px_rgba(255,107,0,0.28)] transition hover:-translate-y-0.5 active:scale-95"
             >
               <SlidersHorizontal className="size-5" />
             </Link>
           </div>
         </div>
-      </header>
+      </div>
 
-      <main className="relative mx-auto grid max-w-[1440px] gap-6 px-4 pb-28 pt-5 md:grid-cols-[360px_minmax(0,1fr)] md:px-8 md:pb-20 xl:grid-cols-[380px_minmax(0,1fr)]">
-        <aside className="space-y-4 md:sticky md:top-40 md:self-start">
+      <main className="relative mx-auto grid max-w-[1440px] gap-6 px-4 pb-28 pt-6 md:grid-cols-[360px_minmax(0,1fr)] md:px-8 md:pb-20 xl:grid-cols-[380px_minmax(0,1fr)]">
+        <aside className="space-y-4 md:sticky md:top-28 md:self-start">
           <section className="rounded-[34px] border border-white/10 bg-white/8 p-5 backdrop-blur-xl">
             <div className="flex items-start justify-between gap-4">
               <div>
@@ -114,11 +114,11 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
                 <p className="mt-1 text-[11px] font-bold text-white/50">resultados</p>
               </div>
               <div className="rounded-[20px] bg-black/24 p-3 ring-1 ring-white/10">
-                <p className="text-xl font-black">{results.filter((item) => item.badge === "Empresa Verificada").length}</p>
+                <p className="text-xl font-black">{results.filter((item) => item.trustSignals.includes("verified")).length}</p>
                 <p className="mt-1 text-[11px] font-bold text-white/50">verificados</p>
               </div>
               <div className="rounded-[20px] bg-black/24 p-3 ring-1 ring-white/10">
-                <p className="text-xl font-black">{results.filter((item) => item.isOpen).length}</p>
+                <p className="text-xl font-black">{results.filter((item) => item.hours.isOpen).length}</p>
                 <p className="mt-1 text-[11px] font-bold text-white/50">abertos</p>
               </div>
             </div>
@@ -160,17 +160,17 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
               >
                 Todas as categorias
               </Link>
-              {categoryOptions.map((item) => (
+              {categories.map((item) => (
                 <Link
                   key={item.id}
-                  href={buildSearchHref({ q, category: item.id, filter })}
+                  href={buildSearchHref({ q, category: item.slug, filter })}
                   className={`rounded-[18px] px-4 py-3 text-sm font-black transition ${
-                    category === item.id
+                    category === item.slug || category === item.id
                       ? "bg-[#FF6B00] text-white"
                       : "bg-white/8 text-white/68 hover:bg-white/12 hover:text-white"
                   }`}
                 >
-                  {item.label}
+                  {item.name}
                 </Link>
               ))}
             </div>
@@ -198,7 +198,7 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
                     className={`absolute ${positions[index]} flex items-center gap-2 rounded-full bg-[#FF6B00] px-3 py-2 text-xs font-black text-white shadow-[0_12px_34px_rgba(255,107,0,0.4)] ring-4 ring-white/10 transition hover:-translate-y-0.5`}
                   >
                     <Zap className="size-4 fill-white" />
-                    <span className="hidden sm:inline">{business.categoryLabel}</span>
+                    <span className="hidden sm:inline">{business.categories[0]?.name ?? "Negocio local"}</span>
                   </Link>
                 )
               })}
@@ -229,13 +229,13 @@ export default async function SearchResultsPage({ searchParams }: SearchPageProp
                 ))}
               </div>
               <div className="mt-5 flex flex-wrap justify-center gap-2">
-                {categoryOptions.slice(0, 4).map((item) => (
+                {categories.slice(0, 4).map((item) => (
                   <Link
                     key={item.id}
-                    href={`/buscar?category=${item.id}`}
+                    href={`/buscar?category=${item.slug}`}
                     className="rounded-full bg-[#FF6B00] px-4 py-2 text-sm font-black text-white shadow-[0_12px_28px_rgba(255,107,0,0.2)]"
                   >
-                    {item.label}
+                    {item.name}
                   </Link>
                 ))}
               </div>

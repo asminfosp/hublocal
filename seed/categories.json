@@ -1,0 +1,344 @@
+[
+  {
+    "id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "parent_id": null,
+    "slug": "alimentacao",
+    "name": "Alimentacao",
+    "description": "Pizzarias, restaurantes e sabores locais",
+    "sort_order": 0,
+    "active": true
+  },
+  {
+    "id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "parent_id": null,
+    "slug": "servicos",
+    "name": "Servicos",
+    "description": "Profissionais para resolver hoje",
+    "sort_order": 1,
+    "active": true
+  },
+  {
+    "id": "524916ac-3962-5270-a1f1-34fc034c156d",
+    "parent_id": null,
+    "slug": "automotivo",
+    "name": "Automotivo",
+    "description": "Oficinas, guincho e manutencao",
+    "sort_order": 2,
+    "active": true
+  },
+  {
+    "id": "6a846faa-d1de-5068-aaa3-325eb8c5e507",
+    "parent_id": null,
+    "slug": "saude",
+    "name": "Saude",
+    "description": "Clinicas, farmacias e cuidados",
+    "sort_order": 3,
+    "active": true
+  },
+  {
+    "id": "c44e9440-a2da-5dda-a04c-5aaa60d72419",
+    "parent_id": null,
+    "slug": "beleza",
+    "name": "Beleza",
+    "description": "Barbearias, saloes e estetica",
+    "sort_order": 4,
+    "active": true
+  },
+  {
+    "id": "9d80c3f4-4f74-542e-a3d6-15ca1cfe1643",
+    "parent_id": null,
+    "slug": "pet",
+    "name": "Pet",
+    "description": "Pet shops, veterinarios e banho",
+    "sort_order": 5,
+    "active": true
+  },
+  {
+    "id": "290864fc-d197-5ce3-a5e2-8781af9f80a5",
+    "parent_id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "slug": "pizzaria",
+    "name": "Pizzaria",
+    "description": "Pizzas artesanais",
+    "sort_order": 0,
+    "active": true
+  },
+  {
+    "id": "c25ec07c-89f8-5421-ac27-6ae4bf333838",
+    "parent_id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "slug": "hamburgueria",
+    "name": "Hamburgueria",
+    "description": "Hamburguer artesanal",
+    "sort_order": 1,
+    "active": true
+  },
+  {
+    "id": "32a5f060-945b-56cc-a3d4-1967389ea164",
+    "parent_id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "slug": "marmitaria",
+    "name": "Marmitaria",
+    "description": "Comida caseira",
+    "sort_order": 2,
+    "active": true
+  },
+  {
+    "id": "48babe5c-aca0-5d36-a792-105168de1c93",
+    "parent_id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "slug": "restaurante",
+    "name": "Restaurante",
+    "description": "Restaurante familiar",
+    "sort_order": 3,
+    "active": true
+  },
+  {
+    "id": "3a74cbc7-e75a-5b49-ae8a-082f5498352f",
+    "parent_id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "slug": "lanchonete",
+    "name": "Lanchonete",
+    "description": "Lanches rapidos",
+    "sort_order": 4,
+    "active": true
+  },
+  {
+    "id": "e077dd08-5f60-5a3c-a76d-35e3d88dea51",
+    "parent_id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "slug": "padaria",
+    "name": "Padaria",
+    "description": "Paes e cafe",
+    "sort_order": 5,
+    "active": true
+  },
+  {
+    "id": "d89136ec-d9a5-54f2-aff3-e752ac104785",
+    "parent_id": "a62ceca6-dd88-59e3-add8-d2ae2fb40c40",
+    "slug": "acaiteria",
+    "name": "Acaiteria",
+    "description": "Acai e cremes",
+    "sort_order": 6,
+    "active": true
+  },
+  {
+    "id": "56e2f4c7-30e8-5093-a6c2-51044499e968",
+    "parent_id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "slug": "eletricista",
+    "name": "Eletricista",
+    "description": "Eletrica residencial",
+    "sort_order": 7,
+    "active": true
+  },
+  {
+    "id": "a8161cbf-6545-5006-a2c1-60f0a0212769",
+    "parent_id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "slug": "encanador",
+    "name": "Encanador",
+    "description": "Hidraulica residencial",
+    "sort_order": 8,
+    "active": true
+  },
+  {
+    "id": "6b852584-75e7-5162-a0c2-c4735c8ec4e9",
+    "parent_id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "slug": "chaveiro",
+    "name": "Chaveiro",
+    "description": "Chaves e fechaduras",
+    "sort_order": 9,
+    "active": true
+  },
+  {
+    "id": "f7074782-62d5-52ad-a033-f6fc5967f627",
+    "parent_id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "slug": "tecnico-de-celular",
+    "name": "Tecnico de Celular",
+    "description": "Assistencia de celulares",
+    "sort_order": 10,
+    "active": true
+  },
+  {
+    "id": "f74ff3f0-849d-5851-a597-140cb69f5491",
+    "parent_id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "slug": "tecnico-de-informatica",
+    "name": "Tecnico de Informatica",
+    "description": "Computadores e redes",
+    "sort_order": 11,
+    "active": true
+  },
+  {
+    "id": "b93ce44a-1061-5fda-a063-008bcef64f0b",
+    "parent_id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "slug": "pintor",
+    "name": "Pintor",
+    "description": "Pintura residencial",
+    "sort_order": 12,
+    "active": true
+  },
+  {
+    "id": "30330ea2-4c07-50c8-a7c4-9eeb220f1fd2",
+    "parent_id": "c80b0f4e-f159-59d4-a767-a92bf6c1ced7",
+    "slug": "marceneiro",
+    "name": "Marceneiro",
+    "description": "Moveis sob medida",
+    "sort_order": 13,
+    "active": true
+  },
+  {
+    "id": "f6c6d794-1d42-5f43-ad42-2da440383c9a",
+    "parent_id": "524916ac-3962-5270-a1f1-34fc034c156d",
+    "slug": "mecanico",
+    "name": "Mecanico",
+    "description": "Mecanica e revisao",
+    "sort_order": 14,
+    "active": true
+  },
+  {
+    "id": "24530abd-c600-5888-abf6-1aedc2c7f017",
+    "parent_id": "524916ac-3962-5270-a1f1-34fc034c156d",
+    "slug": "auto-eletrica",
+    "name": "Auto Eletrica",
+    "description": "Eletrica automotiva",
+    "sort_order": 15,
+    "active": true
+  },
+  {
+    "id": "1a04f2df-feab-5a22-a68c-0108b848770a",
+    "parent_id": "524916ac-3962-5270-a1f1-34fc034c156d",
+    "slug": "borracharia",
+    "name": "Borracharia",
+    "description": "Pneus e reparos",
+    "sort_order": 16,
+    "active": true
+  },
+  {
+    "id": "df312008-db04-5d3e-a399-5b0925acb3fa",
+    "parent_id": "524916ac-3962-5270-a1f1-34fc034c156d",
+    "slug": "funilaria",
+    "name": "Funilaria",
+    "description": "Funilaria e pintura",
+    "sort_order": 17,
+    "active": true
+  },
+  {
+    "id": "239e88e8-697a-52b3-a410-827e98fd4ea4",
+    "parent_id": "524916ac-3962-5270-a1f1-34fc034c156d",
+    "slug": "guincho",
+    "name": "Guincho",
+    "description": "Guincho local",
+    "sort_order": 18,
+    "active": true
+  },
+  {
+    "id": "dc4e8599-1883-5d29-aebc-c14bb632b2f7",
+    "parent_id": "524916ac-3962-5270-a1f1-34fc034c156d",
+    "slug": "troca-de-oleo",
+    "name": "Troca de Oleo",
+    "description": "Oleo e filtros",
+    "sort_order": 19,
+    "active": true
+  },
+  {
+    "id": "9b398aa5-ac45-50d9-af75-f06dc2140376",
+    "parent_id": "6a846faa-d1de-5068-aaa3-325eb8c5e507",
+    "slug": "dentista",
+    "name": "Dentista",
+    "description": "Clinica odontologica",
+    "sort_order": 20,
+    "active": true
+  },
+  {
+    "id": "e43cb2ae-6ef9-58d3-ada5-d3f297d78a41",
+    "parent_id": "6a846faa-d1de-5068-aaa3-325eb8c5e507",
+    "slug": "psicologo",
+    "name": "Psicologo",
+    "description": "Atendimento psicologico",
+    "sort_order": 21,
+    "active": true
+  },
+  {
+    "id": "71e216ae-3638-56e1-a9e7-7d29c0cc0c04",
+    "parent_id": "6a846faa-d1de-5068-aaa3-325eb8c5e507",
+    "slug": "fisioterapia",
+    "name": "Fisioterapia",
+    "description": "Reabilitacao e movimento",
+    "sort_order": 22,
+    "active": true
+  },
+  {
+    "id": "d81d4689-66ed-5b90-a2cf-74e0ae5fee47",
+    "parent_id": "6a846faa-d1de-5068-aaa3-325eb8c5e507",
+    "slug": "clinica-medica",
+    "name": "Clinica Medica",
+    "description": "Consultas e cuidados",
+    "sort_order": 23,
+    "active": true
+  },
+  {
+    "id": "0ac071b1-aa4c-5114-aee4-342d30178172",
+    "parent_id": "6a846faa-d1de-5068-aaa3-325eb8c5e507",
+    "slug": "farmacia",
+    "name": "Farmacia",
+    "description": "Farmacia local",
+    "sort_order": 24,
+    "active": true
+  },
+  {
+    "id": "4785d2ce-6957-5411-a722-0bb599bddbaf",
+    "parent_id": "c44e9440-a2da-5dda-a04c-5aaa60d72419",
+    "slug": "barbearia",
+    "name": "Barbearia",
+    "description": "Corte e barba",
+    "sort_order": 25,
+    "active": true
+  },
+  {
+    "id": "d4888062-7c8f-5bec-af4a-4ddbeb23bdb9",
+    "parent_id": "c44e9440-a2da-5dda-a04c-5aaa60d72419",
+    "slug": "salao",
+    "name": "Salao",
+    "description": "Cabelo e beleza",
+    "sort_order": 26,
+    "active": true
+  },
+  {
+    "id": "95feefc3-48b8-5189-a71a-35d6c6cc7535",
+    "parent_id": "c44e9440-a2da-5dda-a04c-5aaa60d72419",
+    "slug": "manicure",
+    "name": "Manicure",
+    "description": "Unhas e cuidado",
+    "sort_order": 27,
+    "active": true
+  },
+  {
+    "id": "874a7670-e0f4-5818-acde-05710cb514da",
+    "parent_id": "c44e9440-a2da-5dda-a04c-5aaa60d72419",
+    "slug": "estetica",
+    "name": "Estetica",
+    "description": "Estetica e bem-estar",
+    "sort_order": 28,
+    "active": true
+  },
+  {
+    "id": "331e729f-fa1b-5408-adf0-2d317f28688e",
+    "parent_id": "9d80c3f4-4f74-542e-a3d6-15ca1cfe1643",
+    "slug": "pet-shop",
+    "name": "Pet Shop",
+    "description": "Produtos pet",
+    "sort_order": 29,
+    "active": true
+  },
+  {
+    "id": "d61781b1-5f54-522c-aa25-25ec7e946c4f",
+    "parent_id": "9d80c3f4-4f74-542e-a3d6-15ca1cfe1643",
+    "slug": "veterinario",
+    "name": "Veterinario",
+    "description": "Clinica veterinaria",
+    "sort_order": 30,
+    "active": true
+  },
+  {
+    "id": "687e81af-98e8-59fd-a4d6-23d516039328",
+    "parent_id": "9d80c3f4-4f74-542e-a3d6-15ca1cfe1643",
+    "slug": "banho-e-tosa",
+    "name": "Banho e Tosa",
+    "description": "Higiene pet",
+    "sort_order": 31,
+    "active": true
+  }
+]

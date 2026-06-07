@@ -14,3 +14,9 @@ node_modules
 .next/
 .DS_Store
 .vercel
+.audit-shots/
+test-results/
+playwright-report/
+supabase/.temp/
+.docs/
+

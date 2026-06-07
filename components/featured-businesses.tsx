@@ -1,9 +1,12 @@
 import Link from "next/link"
 
-import { BusinessCard } from "./business-card"
-import { businesses } from "@/lib/hub-data"
+import { hubRepositories } from "@/src/application/repositories"
 
-export function FeaturedBusinesses() {
+import { BusinessCard } from "./business-card"
+
+export async function FeaturedBusinesses() {
+  const businesses = await hubRepositories.discovery.getFeatured({ limit: 6 })
+
   return (
     <section className="px-4 pb-24">
       <div className="mb-4 flex items-center justify-between">

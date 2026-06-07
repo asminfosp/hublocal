@@ -270,6 +270,25 @@ Regras:
 - No desktop, agrupar em lateral ou area persistente.
 - No mobile, aceitar scroll horizontal ou menu compacto.
 
+## Categorias
+
+Categorias oficiais:
+
+- Alimentacao.
+- Servicos.
+- Automotivo.
+- Saude.
+- Beleza.
+- Pet.
+
+Regras:
+
+- Categorias devem parecer caminhos ativos de descoberta.
+- Usar icone Lucide, titulo curto e descricao objetiva.
+- Estado hover deve elevar levemente o bloco e reforcar o laranja.
+- No desktop, distribuir em grid que aproveite largura.
+- No mobile, preservar leitura e toque confortavel.
+
 ## Perfil da Empresa
 
 Objetivo:

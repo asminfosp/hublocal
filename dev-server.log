@@ -1,0 +1,54 @@
+
+> my-project@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.15.4:3000
+- Environments: .env.local
+✓ Ready in 916ms
+Creating turbopack project { dir: 'C:\\PROJETOS\\hub-local', testMode: true }
+
+ GET / 200 in 3.8s (next.js: 351ms, application-code: 3.4s)
+ GET /empresa/bella-massa-pizzaria-embu-das-artes 404 in 2.0s (next.js: 1698ms, generate-params: 1598ms, application-code: 334ms)
+ GET /empresa/stg-garagem-taboao 200 in 618ms (next.js: 14ms, generate-params: 8ms, application-code: 604ms)
+ GET / 200 in 1586ms (next.js: 4ms, application-code: 1582ms)
+ GET / 200 in 993ms (next.js: 5ms, application-code: 987ms)
+ GET /mobilidade 200 in 317ms (next.js: 66ms, application-code: 251ms)
+ GET /shop 200 in 303ms (next.js: 60ms, application-code: 242ms)
+ GET /servicos 200 in 279ms (next.js: 55ms, application-code: 224ms)
+ GET /buscar?filter=verified 200 in 2.2s (next.js: 57ms, application-code: 2.1s)
+ GET /buscar 200 in 15ms (next.js: 6ms, application-code: 9ms)
+ GET /buscar 200 in 687ms (next.js: 4ms, application-code: 683ms)
+ GET / 200 in 1735ms (next.js: 17ms, application-code: 1718ms)
+ GET / 200 in 1469ms (next.js: 5ms, application-code: 1465ms)
+ GET /servicos 200 in 457ms (next.js: 4ms, application-code: 453ms)
+ GET /shop 200 in 1099ms (next.js: 19ms, application-code: 1080ms)
+ GET / 200 in 3.6s (next.js: 9ms, application-code: 3.6s)
+ GET /mobilidade 200 in 604ms (next.js: 6ms, application-code: 599ms)
+ GET /buscar?q=Eletricista 200 in 4.7s (next.js: 3ms, application-code: 4.7s)
+ GET /buscar 200 in 6.1s (next.js: 3ms, application-code: 6.1s)
+ GET /entrar 200 in 326ms (next.js: 53ms, application-code: 273ms)
+ GET /empresa/stg-luz-embu-eletrica 200 in 1747ms (next.js: 21ms, generate-params: 14ms, application-code: 1726ms)
+ GET /cadastrar-empresa 200 in 542ms (next.js: 38ms, application-code: 504ms)
+ GET /servicos 200 in 638ms (next.js: 3ms, application-code: 635ms)
+ GET / 200 in 2.6s (next.js: 3ms, application-code: 2.6s)
+ GET /shop 200 in 529ms (next.js: 14ms, application-code: 515ms)
+ GET /mobilidade 200 in 409ms (next.js: 4ms, application-code: 405ms)
+ GET /buscar?q=Eletricista 200 in 1202ms (next.js: 5ms, application-code: 1197ms)
+ GET /buscar 200 in 2.6s (next.js: 3ms, application-code: 2.6s)
+ GET /entrar 200 in 168ms (next.js: 4ms, application-code: 164ms)
+ GET /cadastrar-empresa 200 in 534ms (next.js: 7ms, application-code: 527ms)
+ GET /empresa/stg-luz-embu-eletrica 200 in 2.0s (next.js: 14ms, generate-params: 8ms, application-code: 1992ms)
+ GET / 200 in 1899ms (next.js: 20ms, application-code: 1880ms)
+ GET / 200 in 1309ms (next.js: 3ms, application-code: 1306ms)
+ GET / 200 in 2.1s (next.js: 20ms, application-code: 2.1s)
+ GET / 200 in 1915ms (next.js: 6ms, application-code: 1909ms)
+ GET /buscar 200 in 1537ms (next.js: 6ms, application-code: 1532ms)
+ GET /buscar 200 in 1270ms (next.js: 5ms, application-code: 1266ms)
+ GET /buscar?filter=verified 200 in 807ms (next.js: 4ms, application-code: 803ms)
+ GET /buscar?filter=open 200 in 457ms (next.js: 4ms, application-code: 453ms)
+ GET /buscar?filter=open 200 in 420ms (next.js: 4ms, application-code: 417ms)
+ GET /buscar 200 in 10ms (next.js: 3ms, application-code: 7ms)
+ GET /buscar 200 in 974ms (next.js: 3ms, application-code: 970ms)
+ GET / 200 in 1101ms (next.js: 3ms, application-code: 1097ms)

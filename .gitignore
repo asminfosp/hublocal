@@ -1,22 +1,94 @@
-# v0 sandbox internal files
-__v0_runtime_loader.js
-__v0_devtools.tsx
-__v0_jsx-dev-runtime.ts
-.snowflake/
-.v0-trash/
+# Hub Local - .gitignore Recomendado
+
+# Dependencies
+
+node_modules/
+
+# Next.js
+
+.next/
+out/
+
+# Build
+
+dist/
+build/
+
+# Logs
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Environment
+
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+.env.*
+
+# Vercel
+
 .vercel/
 
-# Environment variables
-.env*.local
+# Coverage
 
-# Common ignores
-node_modules
-.next/
-.DS_Store
-.vercel
-.audit-shots/
-test-results/
+coverage/
+
+# Playwright
+
 playwright-report/
-supabase/.temp/
-.docs/
+test-results/
 
+# Turbo
+
+.turbo/
+
+# Cache
+
+.cache/
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# IDE
+
+.vscode/
+.idea/
+.audit-shots/
+
+*.tsbuildinfo
+
+# Supabase Local
+
+.supabase/
+
+# Temporary
+
+tmp/
+temp/
+
+# Internal Docs (opcional)
+
+docs/internal/
+docs/private/
+docs/drafts/
+
+# Local exports
+
+exports/
+backups/
+snapshots/
+
+# Database dumps
+
+*.sql.gz
+*.dump
+*.bak
+*.backup

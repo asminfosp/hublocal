@@ -1,4 +1,5 @@
 import type { Business, TrustSignal } from "@/src/modules/businesses/domain/business"
+import { inferCapabilitiesFromCategories, type CapabilityId } from "@/src/modules/capabilities/domain/capability"
 import type { Category, DomainId } from "@/src/modules/taxonomy/domain/category"
 
 type Row = Record<string, any>
@@ -63,6 +64,14 @@ export function mapBusiness(row: Row): Business {
       ? "/businesses/automotivo-1.jpg"
       : "/businesses/servicos-1.jpg"
 
+  const categories = (row.business_categories ?? []).map((relation: Row) => ({
+    id: relation.categories.id,
+    name: relation.categories.name,
+  }))
+  const persistedCapabilities = (row.business_capabilities ?? [])
+    .filter((relation: Row) => relation.enabled)
+    .map((relation: Row) => relation.capability_id as CapabilityId)
+
   return {
     id: row.id,
     slug: row.slug,
@@ -70,10 +79,8 @@ export function mapBusiness(row: Row): Business {
     description: row.description,
     specialty: row.specialty ?? undefined,
     domainIds,
-    categories: (row.business_categories ?? []).map((relation: Row) => ({
-      id: relation.categories.id,
-      name: relation.categories.name,
-    })),
+    categories,
+    capabilities: persistedCapabilities.length ? persistedCapabilities : inferCapabilitiesFromCategories(categories),
     offerings: (row.offerings ?? []).map((offering: Row) => ({
       id: offering.id,
       type: offering.type,

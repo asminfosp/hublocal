@@ -92,7 +92,8 @@ test.describe("Architecture V1 boundaries", () => {
     await expect(Promise.all(documents.map((file) => readFile(path.join(root, file), "utf8")))).resolves.toHaveLength(
       documents.length,
     )
-    expect(Object.keys(dependencies).filter((name) => name.toLowerCase().includes("supabase"))).toEqual([
+    expect(Object.keys(dependencies).filter((name) => name.toLowerCase().includes("supabase")).sort()).toEqual([
+      "@supabase/ssr",
       "@supabase/supabase-js",
     ])
   })

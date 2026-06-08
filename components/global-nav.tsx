@@ -12,6 +12,7 @@ import {
   Menu,
   Route,
   Search,
+  Settings,
   ShoppingBag,
   Sparkles,
   Store,
@@ -20,6 +21,9 @@ import {
   X,
   type LucideIcon,
 } from "lucide-react"
+
+import { signOutAction } from "@/app/auth/actions"
+import { useAuthSession } from "@/components/auth-session-provider"
 
 const desktopNav = [
   { label: "Inicio", href: "/" },
@@ -38,10 +42,10 @@ const mobileNav: MobileNavItem[] = [
   { icon: Wrench, label: "Servicos", href: "/servicos" },
   { icon: ShoppingBag, label: "Shop", href: "/shop" },
   { icon: Route, label: "Mobilidade", href: "/mobilidade" },
-  { icon: Compass, label: "Descobrir", href: "/buscar" },
+  { icon: Compass, label: "Buscar", href: "/buscar" },
   { icon: Building2, label: "Empresas", href: "/buscar?filter=verified" },
   { icon: Heart, label: "Favoritos", future: true },
-  { icon: User, label: "Perfil", future: true },
+  { icon: User, label: "Minha Conta", future: true },
 ]
 
 function LogoMark() {
@@ -57,8 +61,25 @@ function LogoMark() {
   )
 }
 
+function AvatarMark({ name, image }: { name: string; image?: string }) {
+  return image ? (
+    <img src={image} alt="" className="size-full object-cover" />
+  ) : (
+    <span>{name.charAt(0).toUpperCase()}</span>
+  )
+}
+
+function AccountSkeleton() {
+  return (
+    <div aria-label="Carregando sessao" className="flex size-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/10">
+      <span className="size-6 animate-pulse rounded-full bg-white/20" />
+    </div>
+  )
+}
+
 export function GlobalNav() {
   const [isOpen, setIsOpen] = useState(false)
+  const { status, profile } = useAuthSession()
   const pathname = usePathname()
   const activeSection =
     pathname === "/"
@@ -71,16 +92,31 @@ export function GlobalNav() {
             ? "Servicos"
             : pathname === "/shop"
               ? "Shop"
-              : pathname === "/mobilidade"
-                ? "Mobilidade"
+                : pathname === "/mobilidade"
+                  ? "Mobilidade"
+                  : pathname === "/perfil" || pathname === "/minha-conta"
+                    ? "Minha Conta"
                 : ""
+
+  const accountMobileItems: MobileNavItem[] = profile
+    ? [
+        { icon: User, label: "Minha Conta", href: "/minha-conta" },
+        { icon: Store, label: "Meus Negocios", href: "/meus-negocios" },
+        { icon: Heart, label: "Favoritos", href: "/favoritos" },
+        { icon: Settings, label: "Configuracoes", href: "/configuracoes" },
+      ]
+    : [
+      { icon: Heart, label: "Favoritos", future: true },
+        { icon: LogIn, label: "Entrar", href: "/entrar" },
+      ]
+  const currentMobileNav = [...mobileNav.filter((item) => item.label !== "Favoritos" && item.label !== "Minha Conta"), ...accountMobileItems]
 
   function isActive(label: string) {
     return activeSection === label
   }
 
   function isMobileActive(label: string) {
-    return isActive(label) || (activeSection === "Buscar" && label === "Descobrir")
+    return isActive(label)
   }
 
   return (
@@ -126,13 +162,31 @@ export function GlobalNav() {
               <Store className="size-4" />
               Cadastrar Empresa
             </Link>
-            <Link
-              href="/entrar"
-              className="flex h-11 items-center justify-center gap-2 rounded-full bg-white px-4 text-sm font-black text-neutral-950 transition hover:-translate-y-0.5"
-            >
-              <LogIn className="size-4" />
-              Entrar
-            </Link>
+            {status === "loading" ? (
+              <AccountSkeleton />
+            ) : profile ? (
+              <details className="group relative">
+                <summary className="flex size-11 cursor-pointer list-none items-center justify-center overflow-hidden rounded-full bg-[#FF6B00] text-sm font-black text-white ring-1 ring-[#FF6B00]/50">
+                  <AvatarMark name={profile.displayName} image={profile.avatarUrl} />
+                </summary>
+                <div className="absolute right-0 top-14 w-60 rounded-[8px] border border-white/10 bg-[#11141D] p-2 shadow-[0_22px_70px_rgba(0,0,0,0.46)]">
+                  <div className="px-3 py-2">
+                    <p className="truncate text-sm font-black">{profile.displayName}</p>
+                    <p className="truncate text-xs font-medium text-white/42">{profile.email}</p>
+                  </div>
+                  <Link href="/minha-conta" className="flex h-11 items-center gap-2 rounded-[8px] px-3 text-sm font-black text-white/76 hover:bg-white/8 hover:text-white"><User className="size-4 text-[#FF6B00]" />Minha Conta</Link>
+                  <Link href="/meus-negocios" className="flex h-11 items-center gap-2 rounded-[8px] px-3 text-sm font-black text-white/76 hover:bg-white/8 hover:text-white"><Store className="size-4 text-[#FF6B00]" />Meus Negocios</Link>
+                  <Link href="/favoritos" className="flex h-11 items-center gap-2 rounded-[8px] px-3 text-sm font-black text-white/76 hover:bg-white/8 hover:text-white"><Heart className="size-4 text-[#FF6B00]" />Favoritos</Link>
+                  <Link href="/configuracoes" className="flex h-11 items-center gap-2 rounded-[8px] px-3 text-sm font-black text-white/76 hover:bg-white/8 hover:text-white"><Settings className="size-4 text-[#FF6B00]" />Configuracoes</Link>
+                  <form action={signOutAction}><button className="flex h-11 w-full items-center gap-2 rounded-[8px] px-3 text-sm font-black text-white/76 hover:bg-white/8 hover:text-white"><LogIn className="size-4 rotate-180 text-[#FF6B00]" />Sair</button></form>
+                </div>
+              </details>
+            ) : (
+              <Link href="/entrar" className="flex h-11 items-center justify-center gap-2 rounded-full bg-white px-4 text-sm font-black text-neutral-950 transition hover:-translate-y-0.5">
+                <LogIn className="size-4" />
+                Entrar
+              </Link>
+            )}
           </div>
 
           <button
@@ -162,7 +216,7 @@ export function GlobalNav() {
             </div>
 
             <div className="mt-8 grid gap-2">
-              {mobileNav.map((item) => {
+              {currentMobileNav.map((item) => {
                 const Icon = item.icon
                 if (item.future) {
                   return (
@@ -217,6 +271,18 @@ export function GlobalNav() {
                 <Wrench className="size-4" />
                 Cadastrar Empresa
               </Link>
+              {status === "loading" ? (
+                <div className="mt-4 flex h-12 w-full items-center justify-center rounded-[20px] bg-white/8 text-sm font-black text-white/40 ring-1 ring-white/10">
+                  Carregando sessao
+                </div>
+              ) : profile && (
+                <form action={signOutAction}>
+                  <button className="mt-2 flex h-12 w-full items-center justify-center gap-2 rounded-[20px] bg-white/8 text-sm font-black text-white ring-1 ring-white/10">
+                    <LogIn className="size-4 rotate-180 text-[#FF6B00]" />
+                    Sair
+                  </button>
+                </form>
+              )}
             </div>
           </aside>
         </div>

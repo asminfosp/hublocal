@@ -1,5 +1,7 @@
 export type BusinessId = string
 
+import type { CapabilityId } from "../../capabilities/domain/capability"
+
 export type BusinessLocation = {
   city: string
   neighborhood: string
@@ -62,6 +64,7 @@ export type Business = {
   description: string
   domainIds: string[]
   categories: BusinessCategoryRef[]
+  capabilities: CapabilityId[]
   offerings: Offering[]
   contact: BusinessContact
   location: BusinessLocation

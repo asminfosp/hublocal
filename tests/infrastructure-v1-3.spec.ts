@@ -23,6 +23,9 @@ test.describe("Architecture V1.3 infrastructure", () => {
       "business_media",
       "offerings",
       "trust_signals",
+      "favorites",
+      "capabilities",
+      "business_capabilities",
       "business_domains",
       "category_domains",
       "business_categories",
@@ -34,7 +37,11 @@ test.describe("Architecture V1.3 infrastructure", () => {
   })
 
   test("every application table has RLS enabled and explicit policies", async () => {
-    const sql = await readFile(path.join(root, "supabase/migrations/011_rls.sql"), "utf8")
+    const migrationDirectory = path.join(root, "supabase/migrations")
+    const migrationFiles = await readdir(migrationDirectory)
+    const sql = (
+      await Promise.all(migrationFiles.map((file) => readFile(path.join(migrationDirectory, file), "utf8")))
+    ).join("\n")
     const tables = [
       "profiles",
       "businesses",
@@ -49,6 +56,9 @@ test.describe("Architecture V1.3 infrastructure", () => {
       "business_media",
       "offerings",
       "trust_signals",
+      "favorites",
+      "capabilities",
+      "business_capabilities",
     ]
 
     for (const table of tables) {

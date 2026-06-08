@@ -2,6 +2,9 @@
 
 Status: aprovada para implementacao na Arquitetura V1.3.
 
+Atualizacao Camada 5.2: categorias de Mobilidade nao podem ser usadas no cadastro de empresas. Mobilidade e um servico
+proprio do Hub Local. Consulte `domain-experience-v1.md`.
+
 ## Objetivo
 
 Organizar a descoberta sem confundir dominio, categoria, subcategoria e oferta.

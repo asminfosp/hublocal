@@ -4,6 +4,9 @@ Status: aprovado como base da Arquitetura Oficial V1.
 
 Data: 6 de junho de 2026.
 
+Atualizacao Camada 5.2: Mobilidade permanece um dominio do Hub Local, mas nao pertence ao agregado Empresas. Novos
+fluxos de Mobilidade possuem cadastro, painel e operacao proprios. Consulte `domain-experience-v1.md`.
+
 ## Decisao Executiva
 
 O Hub Local sera organizado como uma plataforma de descoberta local composta por:

@@ -13,18 +13,16 @@ test.describe("Layer 2 navigation", () => {
   })
 
   test("business profile marks Empresas and shows breadcrumb", async ({ page }) => {
-    await page.goto("/buscar")
-    const profilePath = await page.locator('a[href^="/empresa/"]').first().getAttribute("href")
-    expect(profilePath).toBeTruthy()
-    await page.goto(profilePath!)
+    await page.goto("/empresa/bella-massa-pizzaria-embu-das-artes", { waitUntil: "domcontentloaded", timeout: 60000 })
     await expect(page.locator('header a[aria-current="page"]')).toContainText("Empresas")
     await expect(page.getByRole("navigation", { name: "Breadcrumb" })).toBeVisible()
   })
 
-  test("official placeholders respond", async ({ page }) => {
+  test("login responds and business registration requires identity", async ({ page }) => {
     await page.goto("/entrar")
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("preparando sua entrada")
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("Entre no Hub Local")
     await page.goto("/cadastrar-empresa")
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("preparando o cadastro")
+    await expect(page).toHaveURL(/\/entrar\?/)
+    expect(new URL(page.url()).searchParams.get("next")).toBe("/cadastrar-empresa")
   })
 })

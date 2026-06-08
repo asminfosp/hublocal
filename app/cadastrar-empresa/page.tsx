@@ -1,11 +1,13 @@
-import { ComingSoonPage } from "@/components/coming-soon-page"
+import { BusinessRegistrationForm } from "@/components/business-registration-form"
+import { requireAuth } from "@/src/application/auth"
 
-export default function RegisterBusinessPlaceholderPage() {
-  return (
-    <ComingSoonPage
-      eyebrow="Proxima camada"
-      title="Estamos preparando o cadastro de empresas."
-      description="Em breve, negocios locais poderao criar e administrar sua presenca no Hub Local com uma experiencia oficial e segura."
-    />
-  )
+type RegisterBusinessPageProps = {
+  searchParams?: Promise<{ error?: string }>
+}
+
+export default async function RegisterBusinessPage({ searchParams }: RegisterBusinessPageProps) {
+  await requireAuth("/cadastrar-empresa")
+  const params = (await searchParams) ?? {}
+
+  return <BusinessRegistrationForm error={params.error} />
 }

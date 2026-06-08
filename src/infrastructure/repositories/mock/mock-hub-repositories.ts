@@ -7,6 +7,7 @@ import {
   type Business as LegacyBusiness,
 } from "@/lib/hub-data"
 import type { Business, TrustSignal } from "@/src/modules/businesses/domain/business"
+import { inferCapabilitiesFromCategories } from "@/src/modules/capabilities/domain/capability"
 import type {
   BusinessInput,
   BusinessListQuery,
@@ -74,16 +75,19 @@ function toBusiness(legacy: LegacyBusiness): Business {
   if (legacy.isOpen) trustSignals.add("open_now")
   if (legacy.rating >= 4.8) trustSignals.add("top_rated")
 
+  const categories = [
+    { id: slugify(legacy.categoryLabel), name: legacy.categoryLabel },
+    { id: slugify(legacy.category), name: legacy.category },
+  ]
+
   return {
     id: legacy.slug,
     slug: legacy.slug,
     name: legacy.name,
     description: legacy.description,
     domainIds: categoryDomainMap[legacy.category],
-    categories: [
-      { id: slugify(legacy.categoryLabel), name: legacy.categoryLabel },
-      { id: slugify(legacy.category), name: legacy.category },
-    ],
+    categories,
+    capabilities: inferCapabilitiesFromCategories(categories),
     offerings: legacy.services.map((service, index) => ({
       id: `${legacy.slug}-offering-${index}`,
       type: categoryDomainMap[legacy.category].includes("shop") ? "product_reference" : "service",

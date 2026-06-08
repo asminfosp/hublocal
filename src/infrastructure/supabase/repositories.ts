@@ -21,7 +21,20 @@ import { RepositoryError } from "@/src/shared/types/repository-error"
 import { mapBusiness, mapCategory } from "./mappers"
 
 const businessSelect = `
-  *,
+  id,
+  slug,
+  name,
+  description,
+  specialty,
+  phone,
+  whatsapp,
+  email,
+  website,
+  verified,
+  status,
+  trusted_since,
+  created_at,
+  updated_at,
   business_domains(domain_id),
   business_categories(is_primary, categories(id, name)),
   locations(*),
@@ -38,22 +51,40 @@ function fail(operation: string, error: unknown): never {
 export class SupabaseBusinessRepository implements BusinessRepository {
   constructor(private readonly client: SupabaseClient) {}
 
+  private async withCapabilities<T extends Record<string, any>>(rows: T[]): Promise<T[]> {
+    if (!rows.length) return rows
+
+    const ids = rows.map((row) => row.id)
+    const { data, error } = await this.client
+      .from("business_capabilities")
+      .select("business_id, capability_id, enabled")
+      .in("business_id", ids)
+
+    // Staging remains compatible before migration 014 is promoted.
+    if (error) return rows
+
+    return rows.map((row) => ({
+      ...row,
+      business_capabilities: (data ?? []).filter((relation) => relation.business_id === row.id),
+    }))
+  }
+
   async getBusiness(id: BusinessId) {
     const { data, error } = await this.client.from("businesses").select(businessSelect).eq("id", id).maybeSingle()
     if (error) fail("getBusiness", error)
-    return data ? mapBusiness(data) : null
+    return data ? mapBusiness((await this.withCapabilities([data]))[0]) : null
   }
 
   async getBusinessBySlug(slug: string) {
     const { data, error } = await this.client.from("businesses").select(businessSelect).eq("slug", slug).maybeSingle()
     if (error) fail("getBusinessBySlug", error)
-    return data ? mapBusiness(data) : null
+    return data ? mapBusiness((await this.withCapabilities([data]))[0]) : null
   }
 
   async listBusinesses(query: BusinessListQuery = {}) {
     const { data, error } = await this.client.from("businesses").select(businessSelect)
     if (error) fail("listBusinesses", error)
-    const businesses = (data ?? []).map(mapBusiness).filter((business) =>
+    const businesses = (await this.withCapabilities(data ?? [])).map(mapBusiness).filter((business) =>
       (!query.city || business.location.city === query.city) &&
       (!query.domainId || business.domainIds.includes(query.domainId)) &&
       (!query.categoryId || business.categories.some((category) => category.id === query.categoryId)),
@@ -76,7 +107,7 @@ export class SupabaseBusinessRepository implements BusinessRepository {
       .select(businessSelect)
       .single()
     if (error) fail("createBusiness", error)
-    return mapBusiness(data)
+    return mapBusiness((await this.withCapabilities([data]))[0])
   }
 
   async updateBusiness(id: BusinessId, input: Partial<BusinessInput>) {
@@ -95,7 +126,7 @@ export class SupabaseBusinessRepository implements BusinessRepository {
       .select(businessSelect)
       .single()
     if (error) fail("updateBusiness", error)
-    return mapBusiness(data)
+    return mapBusiness((await this.withCapabilities([data]))[0])
   }
 }
 
@@ -226,8 +257,9 @@ export class SupabaseMobilityRepository extends SupabaseOfferingRepository imple
       coverage: Array.isArray(row.metadata?.coverage) ? row.metadata.coverage : [],
     }))
   }
-  getProviders(categoryId?: string): Promise<Business[]> {
-    return this.businesses.listBusinesses({ domainId: "mobility", categoryId })
+  async getProviders(_categoryId?: string): Promise<Business[]> {
+    // Camada 5.2: Mobility is a Hub-owned service, never a business provider list.
+    return []
   }
 }
 

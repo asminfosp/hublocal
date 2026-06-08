@@ -3,10 +3,14 @@ import { notFound } from "next/navigation"
 import {
   ArrowRight,
   BadgeCheck,
+  CalendarDays,
   Clock3,
+  ListChecks,
   MapPin,
   MessageCircle,
+  PackageSearch,
   Phone,
+  ReceiptText,
   ShieldCheck,
   Sparkles,
   Star,
@@ -14,7 +18,12 @@ import {
 
 import { BottomNav } from "@/components/bottom-nav"
 import { BusinessCard } from "@/components/business-card"
+import { FavoriteBusinessButton } from "@/components/favorite-business-button"
+import { ShareBusinessButton } from "@/components/share-business-button"
+import { getCurrentUserProfile } from "@/src/application/auth"
+import { isBusinessFavorite } from "@/src/application/favorites"
 import { hubRepositories } from "@/src/application/repositories"
+import { capabilityCatalog, type CapabilityId } from "@/src/modules/capabilities/domain/capability"
 import { formatDistance } from "@/src/shared/utils/format-distance"
 
 type CompanyProfilePageProps = {
@@ -54,6 +63,7 @@ export default async function CompanyProfilePage({ params }: CompanyProfilePageP
     notFound()
   }
 
+  const [profile, favorite] = await Promise.all([getCurrentUserProfile(), isBusinessFavorite(business.id)])
   const category = business.categories[0]
   const whatsappUrl = `https://wa.me/${business.contact.whatsapp?.replace(/\D/g, "") ?? ""}`
   const similarBusinesses = category
@@ -63,6 +73,13 @@ export default async function CompanyProfilePage({ params }: CompanyProfilePageP
     : []
   const rating = business.rating ?? 0
   const reviewCount = business.reviewCount ?? 0
+  const capabilityExperience: Partial<Record<CapabilityId, { label: string; icon: typeof CalendarDays }>> = {
+    appointment: { label: "Agendar horario", icon: CalendarDays },
+    quote: { label: "Solicitar orcamento", icon: ReceiptText },
+    catalog: { label: "Ver catalogo", icon: PackageSearch },
+    ordering: { label: "Fazer pedido", icon: ListChecks },
+    service_area: { label: "Ver area atendida", icon: MapPin },
+  }
 
   return (
     <div className="min-h-screen overflow-hidden bg-[#090B10] text-white">
@@ -85,9 +102,13 @@ export default async function CompanyProfilePage({ params }: CompanyProfilePageP
             <span className="text-white/20">/</span>
             <span className="truncate text-white">{business.name}</span>
           </nav>
-          <div className="flex items-center gap-2 rounded-full bg-white/8 px-4 py-2 text-xs font-black text-white ring-1 ring-white/12">
-            <ShieldCheck className="size-4 text-[#FF6B00]" />
-            Perfil verificado
+          <div className="flex flex-wrap items-center justify-end gap-2">
+            <FavoriteBusinessButton businessId={business.id} slug={business.slug} active={profile ? favorite : false} />
+            <ShareBusinessButton title={business.name} />
+            <div className="hidden items-center gap-2 rounded-full bg-white/8 px-4 py-2 text-xs font-black text-white ring-1 ring-white/12 xl:flex">
+              <ShieldCheck className="size-4 text-[#FF6B00]" />
+              Perfil verificado
+            </div>
           </div>
         </header>
 
@@ -247,6 +268,28 @@ export default async function CompanyProfilePage({ params }: CompanyProfilePageP
           </div>
 
           <aside className="space-y-4 md:sticky md:top-28 md:self-start">
+            {business.capabilities.length > 0 && (
+              <section className="rounded-[8px] border border-[#FF6B00]/28 bg-[#FF6B00]/8 p-5">
+                <p className="text-xs font-black uppercase tracking-[0.16em] text-[#FF6B00]">Experiencia do negocio</p>
+                <h2 className="mt-2 text-2xl font-black">O que voce pode fazer aqui</h2>
+                <div className="mt-5 grid gap-2">
+                  {business.capabilities.map((capabilityId) => {
+                    const experience = capabilityExperience[capabilityId]
+                    const Icon = experience?.icon ?? BadgeCheck
+                    return (
+                      <div key={capabilityId} className="flex items-center gap-3 rounded-[8px] bg-white/8 p-3 ring-1 ring-white/10">
+                        <Icon className="size-5 shrink-0 text-[#FF6B00]" />
+                        <div>
+                          <p className="text-sm font-black">{experience?.label ?? capabilityCatalog[capabilityId].name}</p>
+                          <p className="mt-0.5 text-xs font-semibold text-white/46">{capabilityCatalog[capabilityId].description}</p>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </section>
+            )}
+
             <section className="rounded-[34px] border border-white/10 bg-[#11141D] p-5 text-white shadow-[0_28px_90px_rgba(0,0,0,0.34)]">
               <div className="flex items-start justify-between gap-4">
                 <div>
